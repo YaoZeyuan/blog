@@ -1,3 +1,2 @@
-#博文记录备份
+[濮氭辰婧愮殑blog](https://github.com/YaoZeyuan/blog/issues)
 
-主要用于存放个人写的博客文章，以及一些无关隐私的资料
