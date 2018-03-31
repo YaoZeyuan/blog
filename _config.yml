@@ -8,7 +8,7 @@ subtitle: 山长水阔知何处
 description:
 keywords:
 author: 姚泽源
-language:
+language: zh-Hans
 timezone:
 
 # URL
@@ -73,7 +73,7 @@ pagination_dir: page
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: landscape
+theme: next
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
