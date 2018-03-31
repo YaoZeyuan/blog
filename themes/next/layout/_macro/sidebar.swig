@@ -36,52 +36,56 @@
             {% endif %}
               <p class="site-author-name" itemprop="name">{{ theme.author }}</p>
               <p class="site-description motion-element" itemprop="description">{#
-            #}{% if theme.seo %}{#
-              #}{{ theme.signature }}{#
-            #}{% else %}{#
               #}{{ theme.description }}{#
-            #}{% endif %}{#
             #}</p>
           </div>
 
-          <nav class="site-state motion-element">
-
-            {% if config.archive_dir != '/' and site.posts.length > 0 %}
-              <div class="site-state-item site-state-posts">
-              {% if theme.menu.archives %}
-                <a href="{{ url_for(theme.menu.archives).split('||')[0] | trim }}">
-              {% else %}
-                <a href="{{ url_for(config.archive_dir) }}">
+          {% if theme.site_state %}
+            <nav class="site-state motion-element">
+              {% if config.archive_dir != '/' and site.posts.length > 0 %}
+                <div class="site-state-item site-state-posts">
+                {% if theme.menu.archives %}
+                  <a href="{{ url_for(theme.menu.archives).split('||')[0] | trim }}">
+                {% else %}
+                  <a href="{{ url_for(config.archive_dir) }}">
+                {% endif %}
+                    <span class="site-state-item-count">{{ site.posts.length }}</span>
+                    <span class="site-state-item-name">{{ __('state.posts') }}</span>
+                  </a>
+                </div>
               {% endif %}
-                  <span class="site-state-item-count">{{ site.posts.length }}</span>
-                  <span class="site-state-item-name">{{ __('state.posts') }}</span>
-                </a>
-              </div>
-            {% endif %}
 
-            {% if site.categories.length > 0 %}
-              {% set categoriesPageQuery = site.pages.find({type: 'categories'}, {lean: true}) %}
-              {% set hasCategoriesPage = categoriesPageQuery.length > 0 %}
-              <div class="site-state-item site-state-categories">
-                {% if hasCategoriesPage %}<a href="{{ url_for(categoriesPageQuery[0].path) }}">{% endif %}
-                  <span class="site-state-item-count">{{ site.categories.length }}</span>
-                  <span class="site-state-item-name">{{ __('state.categories') }}</span>
-                {% if hasCategoriesPage %}</a>{% endif %}
-              </div>
-            {% endif %}
+              {% if site.categories.length > 0 %}
+                {% set categoriesPageQuery = site.pages.find({type: 'categories'}, {lean: true}) %}
+                {% set hasCategoriesPage = categoriesPageQuery.length > 0 %}
+                <div class="site-state-item site-state-categories">
+                  {% if hasCategoriesPage %}<a href="{{ url_for(categoriesPageQuery[0].path) }}">{% endif %}
+                    {% set visibleCategories = 0 %}
+                    {% for cat in site.categories %}
+                      {% if cat.length %}{% set visibleCategories += 1 %}{% endif %}
+                    {% endfor %}
+                    <span class="site-state-item-count">{{ visibleCategories }}</span>
+                    <span class="site-state-item-name">{{ __('state.categories') }}</span>
+                  {% if hasCategoriesPage %}</a>{% endif %}
+                </div>
+              {% endif %}
 
-            {% if site.tags.length > 0 %}
-              {% set tagsPageQuery = site.pages.find({type: 'tags'}, {lean: true}) %}
-              {% set hasTagsPage = tagsPageQuery.length > 0 %}
-              <div class="site-state-item site-state-tags">
-                {% if hasTagsPage %}<a href="{{ url_for(tagsPageQuery[0].path) }}">{% endif %}
-                  <span class="site-state-item-count">{{ site.tags.length }}</span>
-                  <span class="site-state-item-name">{{ __('state.tags') }}</span>
-                {% if hasTagsPage %}</a>{% endif %}
-              </div>
-            {% endif %}
-
-          </nav>
+              {% if site.tags.length > 0 %}
+                {% set tagsPageQuery = site.pages.find({type: 'tags'}, {lean: true}) %}
+                {% set hasTagsPage = tagsPageQuery.length > 0 %}
+                <div class="site-state-item site-state-tags">
+                  {% if hasTagsPage %}<a href="{{ url_for(tagsPageQuery[0].path) }}">{% endif %}
+                    {% set visibleTags = 0 %}
+                    {% for tag in site.tags %}
+                      {% if tag.length %}{% set visibleTags += 1 %}{% endif %}
+                    {% endfor %}
+                    <span class="site-state-item-count">{{ visibleTags }}</span>
+                    <span class="site-state-item-name">{{ __('state.tags') }}</span>
+                  {% if hasTagsPage %}</a>{% endif %}
+                </div>
+              {% endif %}
+            </nav>
+          {% endif %}
 
           {% if theme.rss %}
             <div class="feed-link motion-element">
@@ -94,25 +98,33 @@
 
           {% if theme.social %}
             <div class="links-of-author motion-element">
-                {% for name, link in theme.social %}
-                  <span class="links-of-author-item">
-                    <a href="{{ link.split('||')[0] | trim }}" target="_blank" title="{{ name }}">
-                      {% if theme.social_icons.enable %}
-                        <i class="fa fa-fw fa-{{ link.split('||')[1] | trim | default('globe') }}"></i>{#
-                    #}{% endif %}{#
-                      #}{% if not theme.social_icons.icons_only %}{#
-                        #}{{ name }}{#
-                      #}{% endif %}{#
+              {% for name, link in theme.social %}
+                <span class="links-of-author-item">
+                  {% if theme.exturl && theme.social_icons.exturl %}
+                    <span class="exturl" data-url="{{ link.split('||')[0] | trim }}" title="{{ name }}">{#
+                #}{% else %}{#
+                  #}<a href="{{ link.split('||')[0] | trim }}" target="_blank" title="{{ name }}"{% if theme.seo %} rel="external nofollow"{% endif %}>{#
+                #}{% endif %}{#
+                  #}{% if theme.social_icons.enable %}{#
+                    #}<i class="fa fa-fw fa-{{ link.split('||')[1] | trim | default('globe') }}"></i>{#
+                  #}{% endif %}{#
+                  #}{% if not theme.social_icons.icons_only %}{#
+                    #}{{ name }}{#
+                  #}{% endif %}{#
+                #}{% if theme.exturl && theme.social_icons.exturl %}{#
+                  #}</span>
+                  {% else %}{#
                   #}</a>
-                  </span>
-                {% endfor %}
+                  {% endif %}
+                </span>
+              {% endfor %}
             </div>
           {% endif %}
 
           {% set cc = {'by': 1, 'by-nc': 1, 'by-nc-nd': 1, 'by-nc-sa': 1, 'by-nd': 1, 'by-sa': 1, 'zero': 1} %}
           {% if theme.creative_commons in cc %}
             <div class="cc-license motion-element" itemprop="license">
-              <a href="https://creativecommons.org/{% if theme.creative_commons === 'zero' %}publicdomain/zero/1.0{% else %}licenses/{{ theme.creative_commons }}/4.0{% endif %}/" class="cc-opacity" target="_blank">
+              <a href="https://creativecommons.org/{% if theme.creative_commons === 'zero' %}publicdomain/zero/1.0{% else %}licenses/{{ theme.creative_commons }}/4.0{% endif %}/" class="cc-opacity" target="_blank"{% if theme.seo %} rel="external nofollow"{% endif %}>
                 <img src="{{ url_for(theme.images) }}/cc-{{ theme.creative_commons }}.svg" alt="Creative Commons" />
               </a>
             </div>
@@ -135,7 +147,12 @@
             </div>
           {% endif %}
 
-          {% include '../_custom/sidebar.swig' %}
+          {% if theme.custom_file_path.sidebar %}
+            {% set custom_sidebar = '../../../../' + theme.custom_file_path.sidebar %}
+          {% else %}
+            {% set custom_sidebar = '../_custom/sidebar.swig' %}
+          {% endif %}
+          {% include custom_sidebar %}
         </div>
       </section>
 
