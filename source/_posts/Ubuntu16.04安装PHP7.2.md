@@ -11,7 +11,9 @@ Laravel5.6 要求PHP7.1以上的环境, 但是Ubuntu16.04自带的PHP只到7.0, 
 1.  添加PPA源: `sudo add-apt-repository ppa:ondrej/php`
 2.  将PPA源的地址换成中科大代理源的地址
     1.  打开`sudo vim /etc/apt/sources.list.d/ondrej-ubuntu-php-xenial.list`
-    2.  把第一行`deb http://ppa.launchpad.net/ondrej/php/ubuntu xenial main`换成`deb http://launchpad.proxy.ustclug.org/ondrej/php/ubuntu xenial main`
-        1.  来源在这儿[这里](https://github.com/ustclug/mirrorrequest/issues/43)
+    2.  把`http://ppa.launchpad.net/ondrej/php/ubuntu`换成`http://launchpad.proxy.ustclug.org/ondrej/php/ubuntu`
 3.  执行`sudo apt-get update` & `sudo apt-get upgrade`, 搞定~ 
-4.  部分同学可能系统里没有`add-apt-repository`命令, `sudo apt-get install software-properties-common`手工装一下就好了
+
+备注:
+1.  中科大代理源在这儿[这里](https://github.com/ustclug/mirrorrequest/issues/43)
+2.  部分同学可能系统里没有`add-apt-repository`命令, `sudo apt-get install software-properties-common`手工装一下就好了
