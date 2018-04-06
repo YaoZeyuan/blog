@@ -6,3 +6,28 @@ node_modules/
 public/
 .deploy*/
 .idea
+
+
+#   next 主题的ignore
+themes/next/.DS_Store
+themes/next/.idea/
+themes/next/*.log
+themes/next/*.iml
+themes/next/yarn.lock
+themes/next/package-lock.json
+themes/next/node_modules/
+
+# Ignore optional external libraries
+themes/next/source/lib/*
+
+# Track internal libraries & Ignore unused verdors files
+themes/next/source/lib/font-awesome/less/
+themes/next/source/lib/font-awesome/scss/
+!themes/next/source/lib/font-awesome/*
+
+!themes/next/source/lib/jquery/
+
+themes/next/source/lib/ua-parser-js/*
+!themes/next/source/lib/ua-parser-js/dist/
+
+!themes/next/source/lib/velocity/
