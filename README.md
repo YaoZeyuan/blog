@@ -1,3 +1,11 @@
-Hexo 博客 => [戳这儿](http://blog.yaozeyuan.online)
+[戳这儿](http://blog.yaozeyuan.online)
 
-issue博客在 => [这里](https://github.com/YaoZeyuan/blog/issues/)
+
+commit信息规范 => 
+
+|关键字|功能|
+|----|----|
+|feat | 添加新功能|
+|format| 调整代码格式|
+|fix| 修复错误|
+|doc| 修订文档/注释|
