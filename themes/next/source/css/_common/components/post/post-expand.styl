@@ -28,7 +28,7 @@
 }
 
 .posts-expand .post-body {
-  +desktop() { text-align: justify; }
+  +desktop() { text-align: start; }
 
 
   h2, h3, h4, h5, h6 {
@@ -63,3 +63,8 @@
 
 .posts-expand .post-body .fancybox img { margin: 0 auto 25px; }
 .posts-expand .post-body img { margin: 0 auto 25px; }
+
+// 手工hack一下样式
+li {
+  text-align:start;
+}

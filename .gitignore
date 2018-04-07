@@ -31,3 +31,6 @@ themes/next/source/lib/ua-parser-js/*
 !themes/next/source/lib/ua-parser-js/dist/
 
 !themes/next/source/lib/velocity/
+
+#   next主题配置, 里面有gitcomment密钥, 必须忽略掉
+source/_data/next.yml

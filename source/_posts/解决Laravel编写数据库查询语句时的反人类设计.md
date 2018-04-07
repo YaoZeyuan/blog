@@ -6,7 +6,7 @@ tags:
 
 Laravel本身是一个很好用的框架, 但是每次查询数据库的时候, 都要`DB::table(表名)`, 非常反人类
 
-今天研究了一下, 发现DB::table(表名) 实际上是返回了一个`\Illuminate\Database\Query\Builder`, 而这个builder是在框架初始化时创建的`Illuminate\Database\Connection`, 存在app('db')字段里, 那就好办了, 搞个Base类, 调用db方法的时候直接返回app('db')->query()->newQuery(), over
+今天研究了一下, 发现DB::table(表名) 实际上是返回了一个`\Illuminate\Database\Query\Builder`, 而这个builder是在框架初始化时创建的`Illuminate\Database\Connection`, 存在app('db')字段里, 那就好办了, 搞个Base类, 调用db方法的时候直接返回`app('db')->query()->newQuery()`, over
 
 
 截图如下

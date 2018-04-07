@@ -15,5 +15,5 @@ Laravel5.6 要求PHP7.1以上的环境, 但是Ubuntu16.04自带的PHP只到7.0, 
 3.  执行`sudo apt-get update` & `sudo apt-get upgrade`, 搞定~ 
 
 备注:
-1.  中科大代理源在这儿[这里](https://github.com/ustclug/mirrorrequest/issues/43)
+1.  中科大代理源在[这儿](https://github.com/ustclug/mirrorrequest/issues/43)
 2.  部分同学可能系统里没有`add-apt-repository`命令, `sudo apt-get install software-properties-common`手工装一下就好了
