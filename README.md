@@ -1,4 +1,4 @@
-[戳这儿](http://blog.yaozeyuan.online)
+戳这儿 => [http://www.yaozeyuan.online](http://www.yaozeyuan.online)
 
 
 commit信息规范 => 
