@@ -63,7 +63,7 @@ footer:
   since: 2018
 
   # Icon between year and copyright info.
-  icon: 
+  icon:
     # Icon name in fontawesome, see: https://fontawesome.com/v4.7.0/icons
     # `heart` is recommended with animation in red (#ff0000).
     name: user
@@ -251,7 +251,7 @@ excerpt_description: true
 # Automatically Excerpt. Not recommend.
 # Please use <!-- more --> in the post to control excerpt accurately.
 auto_excerpt:
-  enable: false
+  enable: true
   length: 150
 
 # Post meta display settings
@@ -275,7 +275,7 @@ symbols_count_time:
 # Manual define the border radius in codeblock
 # Leave it empty for the default 1
 codeblock:
-  border_radius: 
+  border_radius:
 
 # Wechat Subscriber
 #wechat_subscriber:

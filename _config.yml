@@ -78,6 +78,10 @@ theme: next
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-  type: git
-  repo: git@github.com:YaoZeyuan/YaoZeyuan.github.io.git
+- type: git
   branch: master
+  repo: git@github.com:YaoZeyuan/YaoZeyuan.github.io.git 		# Github	
+- type: git
+  branch: master
+  repo: git@git.coding.net:yaozeyuan/yaozeyuan.coding.me.git	# Coding 
+  
