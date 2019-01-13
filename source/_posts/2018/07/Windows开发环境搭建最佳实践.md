@@ -1,4 +1,8 @@
-#   Windows开发环境最佳实践
+---
+title: Windows开发环境搭建最佳实践
+date: 2018-06-17 17:48:01
+tags:
+---
 
 刚才卸Docker把电脑卸崩了, 连不上网, 重置一下电脑, 正好记录下Windows开发环境的最佳实践.
 
@@ -66,24 +70,24 @@
     3.  在应用商店(Microsoft Store)里, 搜索ubuntu, 安装ubuntu18.04[安装ubuntu18.04](./img/wsl/安装ubuntu18.04.png)
     4.  然后进入开始菜单, 点击Ubuntu的图标, 就可以自动安装了
     5.  安装之后配置阿里云镜像
-        -   `sudo cp /etc/apt/source.list /etc/apt/source.list.backup` 
-        -   `sudo vim /etc/apt/source.list`
+        -   `sudo cp /etc/apt/sources.list /etc/apt/sources.list.backup` 
+        -   `sudo vim /etc/apt/sources.list`
         -   ```bash
-        deb http://mirrors.aliyun.com/ubuntu/ bionic main restricted universe multiverse
-        deb-src http://mirrors.aliyun.com/ubuntu/ bionic main restricted universe multiverse
+            deb http://mirrors.aliyun.com/ubuntu/ bionic main restricted universe multiverse
+            deb-src http://mirrors.aliyun.com/ubuntu/ bionic main restricted universe multiverse
 
-        deb http://mirrors.aliyun.com/ubuntu/ bionic-security main restricted universe multiverse
-        deb-src http://mirrors.aliyun.com/ubuntu/ bionic-security main restricted universe multiverse
+            deb http://mirrors.aliyun.com/ubuntu/ bionic-security main restricted universe multiverse
+            deb-src http://mirrors.aliyun.com/ubuntu/ bionic-security main restricted universe multiverse
 
-        deb http://mirrors.aliyun.com/ubuntu/ bionic-updates main restricted universe multiverse
-        deb-src http://mirrors.aliyun.com/ubuntu/ bionic-updates main restricted universe multiverse
+            deb http://mirrors.aliyun.com/ubuntu/ bionic-updates main restricted universe multiverse
+            deb-src http://mirrors.aliyun.com/ubuntu/ bionic-updates main restricted universe multiverse
 
-        deb http://mirrors.aliyun.com/ubuntu/ bionic-proposed main restricted universe multiverse
-        deb-src http://mirrors.aliyun.com/ubuntu/ bionic-proposed main restricted universe multiverse
+            deb http://mirrors.aliyun.com/ubuntu/ bionic-proposed main restricted universe multiverse
+            deb-src http://mirrors.aliyun.com/ubuntu/ bionic-proposed main restricted universe multiverse
 
-        deb http://mirrors.aliyun.com/ubuntu/ bionic-backports main restricted universe multiverse
-        deb-src http://mirrors.aliyun.com/ubuntu/ bionic-backports main restricted universe multiverse
-        ```
+            deb http://mirrors.aliyun.com/ubuntu/ bionic-backports main restricted universe multiverse
+            deb-src http://mirrors.aliyun.com/ubuntu/ bionic-backports main restricted universe multiverse
+            ```
     6.  `sudo apt-get upate`
     7.  LAMP环境
         1.  安装tasksel, `sudo apt-get install tasksel`
@@ -98,10 +102,11 @@
         1.  配置sudo不需要密码
             1.  `sudo vim /etc/sudoers`, 添加上自己的用户名, 然后加上NOPASSWD: 
                 -   ![sudo不输密码](./img/wsl/sudo不输密码.png)
-        1.  在我的电脑上点右键, 选择管理, 任务计划程序 => 创建任务
-            1.  触发时机为 任意用户登录时
-            2.  启动程序为 `C:\Windows\System32\bash.exe -c 'sudo service rc 5'`
-                -   目前, Ubuntu16.04可以直接执行`sudo service rc 5`, 但是Ubuntu18.04只能手工指定启动服务, demo => `sudo service ssh restart && sudo service php7.2-fpm restart`
+        1.  在启动文件夹(`C:\ProgramData\Microsoft\Windows\Start Menu\Programs\StartUp`)中添加启动脚本
+            ```bat
+            "C:\Windows\System32\bash.exe" -c 'sudo service ssh restart'
+            ```
+            -   目前, Ubuntu16.04可以直接执行`sudo service rc 5`, 但是Ubuntu18.04只能手工指定启动服务, demo => `sudo service ssh restart && sudo service php7.2-fpm restart`
             3.  截图示例
                 -   ![开机自动启动WSL](./img/wsl/开机自动启动.png)
     9.  建立文件夹快捷方式.
@@ -203,8 +208,22 @@
         2.  将Docker项目expose的端口在虚拟机上绑定好映射
             -   ![端口转发](./img/docker/vbox/端口转发.png)
         3.  需要用docker-compose官方最新版本的[release](https://github.com/docker/compose/releases)替换掉Toolbox自带的docker-compose.exe, 否则无法解析有中文注释的yaml文件(万恶的Python编码问题)
-    4.  自动启动vbox
-        1.  在`C:\ProgramData\Microsoft\Windows\Start Menu\Programs\StartUp`下新建内容为: `"C:\Program Files\Oracle\VirtualBox\VBoxManage.exe" startvm "default" --type "headless"`的文件, 命名成`start_vbox_headless.bat`即可
+        4.  创建docker-machine并配置阿里镜像源
+            1.  删除旧机器 => `docker-machine rm default`
+            2.  添加新机器并配置阿里镜像源 => `docker-machine create --engine-registry-mirror=https://ns0io9ia.mirror.aliyuncs.com -d virtualbox default`
+    4.  自动启动vbox & docker
+        1.  在启动文件夹(`C:\ProgramData\Microsoft\Windows\Start Menu\Programs\StartUp`)中添加bat启动脚本
+            ```bat
+            "C:\Program Files\Oracle\VirtualBox\VBoxManage.exe" startvm "default" --type "headless"
+            "C:\Program Files\Docker Toolbox\docker-machine.exe" start default
+            echo "等待vbox启动完毕(2分钟)"
+            ping 127.0.0.1 -n 120
+            echo "启动docker"
+            "C:\Program Files\Docker Toolbox\docker-compose.exe" -f "F:\www\ha_develope_env\docker-compose.yml" up -d 
+            "C:\Program Files\Docker Toolbox\docker-compose.exe" -f "F:\www\docker\docker-compose.yml" up -d
+            ```
+        2.  截图示例
+            -   ![开机自动启动vbox&docker](./img/docker/开机自动启动.png)
 
 13. git/ssh
     1.  打开PowerShell, 输入ssh-keygen.exe, 然后把公钥填到git上就可以
@@ -212,14 +231,16 @@
 14. nvm for windows
     1.  windows上有时也需要跑node 
     2.  [项目地址](https://github.com/coreybutler/nvm-windows/releases)
-14. Adobe XC
+15. Adobe XC
     1.  可以在Windows上查看Sketch, 免费
-15. 2345看图王 & 2345好压 & QQ影音
+16. 2345看图王 & 2345好压 & QQ影音
     1.  日常应用
     2.  好压的文件批量改名很好用
-16. 输入法
-    0.  只留两种键盘模式, 中文&英文, 平常可以用Win+空格来回切换
-    1.  使用系统内置输入法
+17. 输入法
+    1.  只留两种键盘模式, 中文&英文, 平常可以用Win+空格来回切换
+    2.  使用系统内置输入法
         1.  Win10内置的输入法是[刘未鹏](http://mindhacks.cn/)牵头开发的, 体验上不输搜狗, 而且永远没有广告
         2.  使用其他输入法的问题在于, 切换起来太麻烦, 带来的好处不足以覆盖广告导致的体验下降
-    2.  在设置里, 配上中文模式下也使用英文标点, 可以减少30%的bug
+    3.  在设置里, 配上中文模式下也使用英文标点, 可以减少30%的bug
+18. 动图捕捉
+    1.  使用[LICEcap](https://www.cockos.com/licecap/)即可
