@@ -12,6 +12,8 @@
   <title>{% block title %}{% endblock %}</title>
   {% include '_third-party/analytics/index.swig' %}
   {% include '_scripts/noscript.swig' %}
+  <meta name="referrer" content="same-origin">
+  <meta name="referrer" content="no-referrer" />
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="{{ page.lang || page.language || config.language }}">
