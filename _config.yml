@@ -9,7 +9,7 @@ description: 东风夜放花千树, 山长水阔知何处
 keywords:
 author: 姚泽源
 language: zh-Hans
-timezone:
+timezone: Asia/Shanghai
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
@@ -43,16 +43,16 @@ highlight:
   line_number: false
   auto_detect: false
   tab_replace: true
-  
+
 # Home page setting
 # path: Root path for your blogs index page. (default = '')
 # per_page: Posts displayed per page. (0 = disable pagination)
 # order_by: Posts order. (Order by date descending by default)
 index_generator:
-  path: ''
+  path: ""
   per_page: 10
   order_by: -date
-  
+
 # Category & Tag
 default_category: uncategorized
 category_map:
@@ -78,10 +78,6 @@ theme: next
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-- type: git
-  branch: master
-  repo: git@github.com:YaoZeyuan/YaoZeyuan.github.io.git 		# Github	
-- type: git
-  branch: master
-  repo: git@git.coding.net:yaozeyuan/yaozeyuan.coding.me.git	# Coding 
-  
+  type: git
+  repo: git@github.com:YaoZeyuan/YaoZeyuan.github.io.git # Github
+  branch: gh-pages

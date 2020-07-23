@@ -20,7 +20,7 @@
   "author": "iissnan <iissnan@gmail.com>",
   "maintainers": [
     "Ivan Nginx <ivan.nginx@gmail.com> (https://almostover.ru)"
-    ],
+  ],
   "license": "AGPL",
   "bugs": {
     "url": "https://github.com/theme-next/hexo-theme-next/issues"

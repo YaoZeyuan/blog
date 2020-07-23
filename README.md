@@ -3,7 +3,7 @@
 依次执行
 ```bash
 npm i -g hexo
-npm i
+npm i && cd ./themes/next && npm i && cd ../..
 hexo server
 ```
 就能在本地进行调试.
