@@ -11,11 +11,11 @@
     "start": "npm run server"
   },
   "hexo": {
-    "version": "4.2.1"
+    "version": "5.2.0"
   },
   "dependencies": {
     "gitalk": "^1.6.2",
-    "hexo": "^4.2.1",
+    "hexo": "^5.2.0",
     "hexo-deployer-git": "^2.1.0",
     "hexo-generator-archive": "^1.0.0",
     "hexo-generator-category": "^1.0.0",
@@ -24,6 +24,7 @@
     "hexo-renderer-ejs": "^1.0.0",
     "hexo-renderer-marked": "^2.0.0",
     "hexo-renderer-stylus": "^1.1.0",
-    "hexo-server": "^1.0.0"
+    "hexo-server": "^1.0.0",
+    "hexo-theme-fluid": "^1.8.3"
   }
 }

@@ -8,7 +8,7 @@ subtitle: 前进四
 description: 东风夜放花千树, 山长水阔知何处
 keywords:
 author: 姚泽源
-language: zh-Hans
+language: zh-CN # 指定语言，可不改
 timezone: Asia/Shanghai
 
 # URL
@@ -73,7 +73,7 @@ pagination_dir: page
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: next
+theme: fluid
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
