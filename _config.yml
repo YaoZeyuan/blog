@@ -12,8 +12,8 @@ language: zh-CN # 指定语言，可不改
 timezone: Asia/Shanghai
 
 # URL
-## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://www.yaozeyuan.online
+## If your site is put in a subdirectory, set url as 'https://yoursite.com/child' and root as '/child/'
+url: https://www.yaozeyuan.online
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -61,7 +61,7 @@ tag_map:
 # Date / Time format
 ## Hexo uses Moment.js to parse and display date
 ## You can customize the date format as defined in
-## http://momentjs.com/docs/#/displaying/format/
+## https://momentjs.com/docs/#/displaying/format/
 date_format: YYYY-MM-DD
 time_format: HH:mm:ss
 

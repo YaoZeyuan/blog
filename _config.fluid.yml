@@ -103,7 +103,7 @@ lazyload: # 对页面中的图片进行懒加载处理，可见范围外的图�
   enable: true
   onlypost: false # 仅在文章页使用懒加载，开启后如果自定义页面需要使用，可以在 Front-matter 里指定 `lazyload: true`
 
-daovoice: # 在线客服 Daovoice 参考：http://dashboard.daovoice.io
+daovoice: # 在线客服 Daovoice 参考：https://dashboard.daovoice.io
   enable: false # 是否开启在线客服聊天
   appid: "" # 应用 ID 设置
 
@@ -227,7 +227,7 @@ post: # 部分配置同时控制自定义页面，注意备注
       enable: false
     date: # 文章日期，优先根据 front-matter 里 date 字段，其次是 md 文件日期
       enable: true
-      format: "LL a" # 格式参照 ISO-8601 日期格式化，可参照 http://momentjs.cn/docs/#/parsing/string-format/
+      format: "LL a" # 格式参照 ISO-8601 日期格式化，可参照 https://momentjs.cn/docs/#/parsing/string-format/
     wordcount: # 字数统计
       enable: true
       format: "{} 字" # 显示的文本，{}是数字的占位符（必须包含)，下同
@@ -264,10 +264,10 @@ post: # 部分配置同时控制自定义页面，注意备注
     enable: false # 开启后文章默认可用，自定义页面如需使用，需在 Front-matter 中指定 `math: true`
     specific: false # 开启后，只有在文章 Front-matter 里指定 `math: true` 才会在文章页启动公式转换，以便在页面不包含公式时提高加载速度
     engine: mathjax # 公式引擎  available: mathjax | katex
-  mermaid: # 流程图，基于 mermaid-js，文档：http://mermaid-js.github.io/mermaid/
+  mermaid: # 流程图，基于 mermaid-js，文档：https://mermaid-js.github.io/mermaid/
     enable: false # 开启后文章默认可用，自定义页面如需使用，需在 Front-matter 中指定 `mermaid: true`
     specific: false # 开启后，只有在文章 Front-matter 里指定 `mermaid: true` 才会在文章页启动公式转换，以便在页面不包含公式时提高加载速度
-    options: { theme: "default" } # 接口选项，具体可见：http://mermaid-js.github.io/mermaid/#/mermaidAPI
+    options: { theme: "default" } # 接口选项，具体可见：https://mermaid-js.github.io/mermaid/#/mermaidAPI
   comments: # 评论
     enable: false # 开启评论
     type: disqus # 指定使用的评论模块  available: disqus | valine | gitalk | utterances | changyan | livere | remark42
@@ -332,7 +332,7 @@ valine:
   serverURLs: # REST API 服务器地址，国际版不填
 
 # 畅言
-# http://changyan.kuaizhan.com/
+# https://changyan.kuaizhan.com/
 changyan:
   appid: ""
   appkey: ""
@@ -398,7 +398,7 @@ about: # 关于页需要手动创建，具体请见：https://hexo.fluid-dev.com
   banner_img_height: 60 # available: 0 - 100
   banner_mask_alpha: 0.3 # available: 0 - 1.0
   subtitle: # 打字机内容
-  avatar: http://ww1.sinaimg.cn/large/6671cfa8ly1gh9gauqxbwj20k10k1q6w.jpg # 头像
+  avatar: https://ww1.sinaimg.cn/large/6671cfa8ly1gh9gauqxbwj20k10k1q6w.jpg # 头像
   name: 姚泽源
   introduce: "东风夜放花千树,山长水阔知何处" # 支持 HTML
   icons: # 更多图标可从 https://hexo.fluid-dev.com/docs/icon/ 查找，class 代表图标的 css class

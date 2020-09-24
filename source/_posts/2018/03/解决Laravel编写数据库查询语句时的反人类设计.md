@@ -4,22 +4,22 @@ date: 2018-03-15 17:48:01
 tags:
 ---
 
-Laravel本身是一个很好用的框架, 但是每次查询数据库的时候, 都要`DB::table(表名)`, 非常反人类
+Laravel 本身是一个很好用的框架, 但是每次查询数据库的时候, 都要`DB::table(表名)`, 非常反人类
 
-今天研究了一下, 发现DB::table(表名) 实际上是返回了一个`\Illuminate\Database\Query\Builder`, 而这个builder是在框架初始化时创建的`Illuminate\Database\Connection`, 存在app('db')字段里, 那就好办了, 搞个Base类, 调用db方法的时候直接返回`app('db')->query()->newQuery()`, over
-
+今天研究了一下, 发现 DB::table(表名) 实际上是返回了一个`\Illuminate\Database\Query\Builder`, 而这个 builder 是在框架初始化时创建的`Illuminate\Database\Connection`, 存在 app('db')字段里, 那就好办了, 搞个 Base 类, 调用 db 方法的时候直接返回`app('db')->query()->newQuery()`, over
 
 截图如下
 
-![Base类](http://ww1.sinaimg.cn/large/6671cfa8ly1fpk7hijeb3j20g50ah0sz.jpg)
+![Base类](https://ww1.sinaimg.cn/large/6671cfa8ly1fpk7hijeb3j20g50ah0sz.jpg)
 
-![实际查询](http://ww1.sinaimg.cn/large/6671cfa8ly1fpk7hu5263j20k80cxjsd.jpg)
+![实际查询](https://ww1.sinaimg.cn/large/6671cfa8ly1fpk7hu5263j20k80cxjsd.jpg)
 
+PS:
 
-PS: 
 1. 相关代码
 
 基类=>
+
 ```php
 <?php
 /**
@@ -99,8 +99,8 @@ class Test extends Base
 
 ```
 
-
 2.  初始化数据库连接的位置
+
 ```php
 
  /**

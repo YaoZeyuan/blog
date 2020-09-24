@@ -27,7 +27,7 @@ gitalk:
   distractionFreeMode: true
 ```
 
-博客地址 => [http://www.yaozeyuan.online](http://www.yaozeyuan.online)
+博客地址 => [https://www.yaozeyuan.online](https://www.yaozeyuan.online)
 
 commit 信息规范 =>
 

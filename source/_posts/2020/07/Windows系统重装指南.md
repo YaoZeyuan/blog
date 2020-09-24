@@ -17,11 +17,11 @@ tags:
 4.  安装
     1.  Chrome
         1.  借道安利两篇文章
-        2.  [扩展推荐](http://www.yaozeyuan.online/2018/01/08/2018/01/Chrome扩展推荐/)
-        3.  [调试进阶](http://www.yaozeyuan.online/2018/05/18/2018/05/Chrome调试进阶/)
+        2.  [扩展推荐](https://www.yaozeyuan.online/2018/01/08/2018/01/Chrome扩展推荐/)
+        3.  [调试进阶](https://www.yaozeyuan.online/2018/05/18/2018/05/Chrome调试进阶/)
     2.  VSCode
         1.  VSCode 的 remote 模式可以作为 XShell 的替代品
-        2.  ![使用方式](http://ww1.sinaimg.cn/large/6671cfa8ly1gh1aldo25cj20sq0lg76y.jpg)
+        2.  ![使用方式](https://ww1.sinaimg.cn/large/6671cfa8ly1gh1aldo25cj20sq0lg76y.jpg)
     3.  KeePass
 5.  密码库在 onedrive 里，需要用 keepass 打开，所以要先装 keepass。装完顺手把 onedrive 里的中文语言文件（Chinese_Simplified.lngx）扔到`C:/Program Files (x86)/KeePass Password Safe 2/LanguagesLanguange`下，齐活
 6.  有了 keepass，v2ray，然后就可以登陆 chrome 账号，让 chrome 在后台同步插件/书签/浏览记录不表
@@ -71,22 +71,22 @@ tags:
             1.  切为阿里云源(默认是欧洲官方源)
                 ```bash
                 #阿里云源
-                deb http://mirrors.aliyun.com/ubuntu/ bionic main restricted universe multiverse
-                deb http://mirrors.aliyun.com/ubuntu/ bionic-security main restricted universe multiverse
-                deb http://mirrors.aliyun.com/ubuntu/ bionic-updates main restricted universe multiverse
-                deb http://mirrors.aliyun.com/ubuntu/ bionic-proposed main restricted universe multiverse
-                deb http://mirrors.aliyun.com/ubuntu/ bionic-backports main restricted universe multiverse
-                deb-src http://mirrors.aliyun.com/ubuntu/ bionic main restricted universe multiverse
-                deb-src http://mirrors.aliyun.com/ubuntu/ bionic-security main restricted universe multiverse
-                deb-src http://mirrors.aliyun.com/ubuntu/ bionic-updates main restricted universe multiverse
-                deb-src http://mirrors.aliyun.com/ubuntu/ bionic-proposed main restricted universe multiverse
-                deb-src http://mirrors.aliyun.com/ubuntu/ bionic-backports main restricted universe multiverse
+                deb https://mirrors.aliyun.com/ubuntu/ bionic main restricted universe multiverse
+                deb https://mirrors.aliyun.com/ubuntu/ bionic-security main restricted universe multiverse
+                deb https://mirrors.aliyun.com/ubuntu/ bionic-updates main restricted universe multiverse
+                deb https://mirrors.aliyun.com/ubuntu/ bionic-proposed main restricted universe multiverse
+                deb https://mirrors.aliyun.com/ubuntu/ bionic-backports main restricted universe multiverse
+                deb-src https://mirrors.aliyun.com/ubuntu/ bionic main restricted universe multiverse
+                deb-src https://mirrors.aliyun.com/ubuntu/ bionic-security main restricted universe multiverse
+                deb-src https://mirrors.aliyun.com/ubuntu/ bionic-updates main restricted universe multiverse
+                deb-src https://mirrors.aliyun.com/ubuntu/ bionic-proposed main restricted universe multiverse
+                deb-src https://mirrors.aliyun.com/ubuntu/ bionic-backports main restricted universe multiverse
                 ```
             2.  安装 nvm, 配置淘宝镜像
                 1.  `curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash`
-                2.  更换 nvm 源 => `echo "export NVM_NODEJS_ORG_MIRROR=http://npm.taobao.org/mirrors/node" >> ~/.bashrc && source ~/.bashrc`
+                2.  更换 nvm 源 => `echo "export NVM_NODEJS_ORG_MIRROR=https://npm.taobao.org/mirrors/node" >> ~/.bashrc && source ~/.bashrc`
                 3.  安装 node `nvm install stable && nvm use stable`
-                4.  更换 npm 源 => `npm config set registry=http://registry.npm.taobao.org`
+                4.  更换 npm 源 => `npm config set registry=https://registry.npm.taobao.org`
             3.  免除用户的 sudo 密码
         3.  vim
             1.  配置 vimrc(建议使用 vim 粘贴前先执行`set paste`, 避免配置内容被 vim 自动换行)
