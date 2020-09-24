@@ -17,7 +17,11 @@ apple_touch_icon: /img/favicon.png # 用于苹果设备的 icon
 
 title_join_string: " - " # 浏览器标签页中的标题分隔符，效果： 文章名 - 站点名
 
-force_https: false # 强制所有链接升级为 HTTPS（适用于图片等资源出现 HTTP 混入报错）
+force_https: true # 强制所有链接升级为 HTTPS（适用于图片等资源出现 HTTP 混入报错）
+static_prefix:
+  internal_js: "https://cdn.jsdelivr.net/gh/YaoZeyuan/YaoZeyuan.github.io@master/js/"
+  internal_css: "https://cdn.jsdelivr.net/gh/YaoZeyuan/YaoZeyuan.github.io@master/css/"
+  internal_img: "https://cdn.jsdelivr.net/gh/YaoZeyuan/YaoZeyuan.github.io@master/img/"
 
 code: # 代码块相关的配置
   copy_btn: true # 是否开启复制代码的按钮
@@ -118,7 +122,7 @@ aplayer: # 音乐播放器，注意不能与 hexo-tag-aplayer 插件共用
         name: "name",
         artist: "artist",
         url: "/songs/test.mp3",
-        cover: "/img/cover.jpg",
+        cover: "https://cdn.jsdelivr.net/gh/YaoZeyuan/YaoZeyuan.github.io@master/img/cover.jpg",
       }
     - {
         name: "name",
@@ -192,7 +196,7 @@ scroll_top_arrow: # 向顶部滚动的箭头
 # Index Page
 #---------------------------
 index:
-  banner_img: /img/default.png # 首页 Banner 头图，以下相同
+  banner_img: https://cdn.jsdelivr.net/gh/YaoZeyuan/YaoZeyuan.github.io@master/img/default.png # 首页 Banner 头图，以下相同
   banner_img_height: 100 # 头图高度，屏幕百分比，available: 0 - 100
   banner_mask_alpha: 0.3 # 头图黑色蒙版的透明度，available: 0 - 1.0， 0 是完全透明（无蒙版），1 是完全不透明
   post_default_img: "" # 默认的文章封面图，当没有指定 index_img 时会使用该图片，若都为空则不显示任何图片
@@ -210,7 +214,7 @@ index:
 # 通过 hexo new page 命令创建的页面
 # Custom Page
 page:
-  banner_img: /img/default.png
+  banner_img: https://cdn.jsdelivr.net/gh/YaoZeyuan/YaoZeyuan.github.io@master/img/default.png
   banner_img_height: 60 # available: 0 - 100
   banner_mask_alpha: 0.3 # available: 0 - 1.0
 
@@ -219,7 +223,7 @@ page:
 # Post Page
 #---------------------------
 post: # 部分配置同时控制自定义页面，注意备注
-  banner_img: /img/default.png
+  banner_img: https://cdn.jsdelivr.net/gh/YaoZeyuan/YaoZeyuan.github.io@master/img/default.png
   banner_img_height: 70 # available: 0 - 100
   banner_mask_alpha: 0.3 # available: 0 - 1.0
   meta: # 文章标题下方的信息
@@ -355,7 +359,7 @@ remark42:
 # Archive Page
 #---------------------------
 archive:
-  banner_img: /img/default.png
+  banner_img: https://cdn.jsdelivr.net/gh/YaoZeyuan/YaoZeyuan.github.io@master/img/default.png
   banner_img_height: 60 # available: 0 - 100
   banner_mask_alpha: 0.3 # available: 0 - 1.0
   subtitle: # 打字机内容
@@ -365,7 +369,7 @@ archive:
 # Categories Page
 #---------------------------
 category:
-  banner_img: /img/default.png
+  banner_img: https://cdn.jsdelivr.net/gh/YaoZeyuan/YaoZeyuan.github.io@master/img/default.png
   banner_img_height: 60 # available: 0 - 100
   banner_mask_alpha: 0.3 # available: 0 - 1.0
   subtitle: # 打字机内容
@@ -378,7 +382,7 @@ category:
 # Tags Page
 #---------------------------
 tag:
-  banner_img: /img/default.png
+  banner_img: https://cdn.jsdelivr.net/gh/YaoZeyuan/YaoZeyuan.github.io@master/img/default.png
   banner_img_height: 80 # available: 0 - 100
   banner_mask_alpha: 0.3 # available: 0 - 1.0
   subtitle: # 打字机内容
@@ -394,7 +398,7 @@ tag:
 # About Page
 #---------------------------
 about: # 关于页需要手动创建，具体请见：https://hexo.fluid-dev.com/docs/guide/#%E5%85%B3%E4%BA%8E%E9%A1%B5
-  banner_img: /img/default.png
+  banner_img: https://cdn.jsdelivr.net/gh/YaoZeyuan/YaoZeyuan.github.io@master/img/default.png
   banner_img_height: 60 # available: 0 - 100
   banner_mask_alpha: 0.3 # available: 0 - 1.0
   subtitle: # 打字机内容
@@ -412,14 +416,14 @@ about: # 关于页需要手动创建，具体请见：https://hexo.fluid-dev.com
     #     link: "https://douban.com",
     #     tip: "豆瓣",
     #   }
-    # - { class: "iconfont icon-wechat-fill", qrcode: "/img/favicon.png" } # 添加 qrcode 后，点击不再跳转，而是悬浮二维码，需要指定 image
+    # - { class: "iconfont icon-wechat-fill", qrcode: "https://cdn.jsdelivr.net/gh/YaoZeyuan/YaoZeyuan.github.io@master/img/favicon.png" } # 添加 qrcode 后，点击不再跳转，而是悬浮二维码，需要指定 image
 
 #---------------------------
 # 404页
 # 404 Page
 #---------------------------
 page404:
-  banner_img: /img/default.png
+  banner_img: https://cdn.jsdelivr.net/gh/YaoZeyuan/YaoZeyuan.github.io@master/img/default.png
   banner_img_height: 85 # available: 0 - 100
   banner_mask_alpha: 0.3 # available: 0 - 1.0
   subtitle: "Page not found" # 打字机内容
@@ -429,7 +433,7 @@ page404:
 # Links Page
 #---------------------------
 links:
-  banner_img: /img/default.png
+  banner_img: https://cdn.jsdelivr.net/gh/YaoZeyuan/YaoZeyuan.github.io@master/img/default.png
   banner_img_height: 60 # available: 0 - 100
   banner_mask_alpha: 0.3 # available: 0 - 1.0
   subtitle: # 打字机内容
@@ -438,17 +442,17 @@ links:
         title: "Fluid Docs",
         intro: "主题使用指南",
         link: "https://hexo.fluid-dev.com/docs/",
-        image: "/img/favicon.png",
+        image: "https://cdn.jsdelivr.net/gh/YaoZeyuan/YaoZeyuan.github.io@master/img/favicon.png",
       }
     - {
         title: "Fluid Repo",
         intro: "主题 GitHub 仓库",
         link: "https://github.com/fluid-dev/hexo-theme-fluid",
-        image: "/img/favicon.png",
+        image: "https://cdn.jsdelivr.net/gh/YaoZeyuan/YaoZeyuan.github.io@master/img/favicon.png",
       }
     - {
         title: "Fluid Example",
         intro: "主题操作示例",
         link: "https://hexo.fluid-dev.com/docs/example/",
-        image: "/img/favicon.png",
+        image: "https://cdn.jsdelivr.net/gh/YaoZeyuan/YaoZeyuan.github.io@master/img/favicon.png",
       }
