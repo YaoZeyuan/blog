@@ -1,0 +1,214 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="mermaid-1636442163780" style="max-width: 833px;" viewBox="-50 -10 833 559" width="100%" height="559">
+          <style>
+            #mermaid-1636442163780 {
+              font-family: "trebuchet ms", verdana, arial, sans-serif;
+              font-size: 16px;
+              fill: #333;
+            }
+            #mermaid-1636442163780 .error-icon {
+              fill: #552222;
+            }
+            #mermaid-1636442163780 .error-text {
+              fill: #552222;
+              stroke: #552222;
+            }
+            #mermaid-1636442163780 .edge-thickness-normal {
+              stroke-width: 2px;
+            }
+            #mermaid-1636442163780 .edge-thickness-thick {
+              stroke-width: 3.5px;
+            }
+            #mermaid-1636442163780 .edge-pattern-solid {
+              stroke-dasharray: 0;
+            }
+            #mermaid-1636442163780 .edge-pattern-dashed {
+              stroke-dasharray: 3;
+            }
+            #mermaid-1636442163780 .edge-pattern-dotted {
+              stroke-dasharray: 2;
+            }
+            #mermaid-1636442163780 .marker {
+              fill: #333333;
+              stroke: #333333;
+            }
+            #mermaid-1636442163780 .marker.cross {
+              stroke: #333333;
+            }
+            #mermaid-1636442163780 svg {
+              font-family: "trebuchet ms", verdana, arial, sans-serif;
+              font-size: 16px;
+            }
+            #mermaid-1636442163780 .actor {
+              stroke: hsl(259.6261682243, 59.7765363128%, 87.9019607843%);
+              fill: #ececff;
+            }
+            #mermaid-1636442163780 text.actor &gt;
+            tspan {
+              fill: black;
+              stroke: none;
+            }
+            #mermaid-1636442163780 .actor-line {
+              stroke: grey;
+            }
+            #mermaid-1636442163780 .messageLine0 {
+              stroke-width: 1.5;
+              stroke-dasharray: none;
+              stroke: #333;
+            }
+            #mermaid-1636442163780 .messageLine1 {
+              stroke-width: 1.5;
+              stroke-dasharray: 2, 2;
+              stroke: #333;
+            }
+            #mermaid-1636442163780 #arrowhead path {
+              fill: #333;
+              stroke: #333;
+            }
+            #mermaid-1636442163780 .sequenceNumber {
+              fill: white;
+            }
+            #mermaid-1636442163780 #sequencenumber {
+              fill: #333;
+            }
+            #mermaid-1636442163780 #crosshead path {
+              fill: #333;
+              stroke: #333;
+            }
+            #mermaid-1636442163780 .messageText {
+              fill: #333;
+              stroke: #333;
+            }
+            #mermaid-1636442163780 .labelBox {
+              stroke: hsl(259.6261682243, 59.7765363128%, 87.9019607843%);
+              fill: #ececff;
+            }
+            #mermaid-1636442163780 .labelText,
+            #mermaid-1636442163780 .labelText &gt;
+            tspan {
+              fill: black;
+              stroke: none;
+            }
+            #mermaid-1636442163780 .loopText,
+            #mermaid-1636442163780 .loopText &gt;
+            tspan {
+              fill: black;
+              stroke: none;
+            }
+            #mermaid-1636442163780 .loopLine {
+              stroke-width: 2px;
+              stroke-dasharray: 2, 2;
+              stroke: hsl(259.6261682243, 59.7765363128%, 87.9019607843%);
+              fill: hsl(259.6261682243, 59.7765363128%, 87.9019607843%);
+            }
+            #mermaid-1636442163780 .note {
+              stroke: #aaaa33;
+              fill: #fff5ad;
+            }
+            #mermaid-1636442163780 .noteText,
+            #mermaid-1636442163780 .noteText &gt;
+            tspan {
+              fill: black;
+              stroke: none;
+            }
+            #mermaid-1636442163780 .activation0 {
+              fill: #f4f4f4;
+              stroke: #666;
+            }
+            #mermaid-1636442163780 .activation1 {
+              fill: #f4f4f4;
+              stroke: #666;
+            }
+            #mermaid-1636442163780 .activation2 {
+              fill: #f4f4f4;
+              stroke: #666;
+            }
+            #mermaid-1636442163780:root {
+              --mermaid-font-family: "trebuchet ms", verdana, arial, sans-serif;
+            }
+          </style>
+          <g />
+          <g>
+            <line class="actor-line" id="actor7" stroke="#999" stroke-width="0.5px" x1="75" y1="5" x2="75" y2="548" />
+            <rect class="actor" fill="#eaeaea" stroke="#666" x="0" y="0" width="150" height="65" rx="3" ry="3" />
+            <text class="actor" style="font-family: Open-Sans, &quot;sans-serif&quot;; font-size: 14px; font-weight: 400; text-anchor: middle;" alignment-baseline="central" dominant-baseline="central" x="75" y="32.5">
+              <tspan x="75" dy="0">业务方</tspan>
+            </text>
+          </g>
+          <g>
+            <line class="actor-line" id="actor8" stroke="#999" stroke-width="0.5px" x1="348" y1="5" x2="348" y2="548" />
+            <rect class="actor" fill="#eaeaea" stroke="#666" x="273" y="0" width="150" height="65" rx="3" ry="3" />
+            <text class="actor" style="font-family: Open-Sans, &quot;sans-serif&quot;; font-size: 14px; font-weight: 400; text-anchor: middle;" alignment-baseline="central" dominant-baseline="central" x="348" y="32.5">
+              <tspan x="348" dy="0">Reconciler</tspan>
+            </text>
+          </g>
+          <g>
+            <line class="actor-line" id="actor9" stroke="#999" stroke-width="0.5px" x1="561" y1="5" x2="561" y2="548" />
+            <rect class="actor" fill="#eaeaea" stroke="#666" x="486" y="0" width="150" height="65" rx="3" ry="3" />
+            <text class="actor" style="font-family: Open-Sans, &quot;sans-serif&quot;; font-size: 14px; font-weight: 400; text-anchor: middle;" alignment-baseline="central" dominant-baseline="central" x="561" y="32.5">
+              <tspan x="561" dy="0">WebviewRender</tspan>
+            </text>
+          </g>
+          <defs>
+            <marker id="arrowhead" refX="9" refY="5" markerUnits="userSpaceOnUse" markerWidth="12" markerHeight="12" orient="auto">
+              <path d="M 0 0 L 10 5 L 0 10 Z" />
+            </marker>
+          </defs>
+          <defs>
+            <marker id="crosshead" refX="16" refY="4" markerWidth="15" markerHeight="8" orient="auto">
+              <path style="stroke-dasharray: 0,0;" fill="black" stroke="#000000" stroke-width="1px" d="M 9 2 V 6 L 16 4 Z" />
+              <path style="stroke-dasharray: 0,0;" fill="none" stroke="#000000" stroke-width="1px" d="M 0 1 L 6 7 M 6 1 L 0 7" />
+            </marker>
+          </defs>
+          <defs>
+            <marker id="filled-head" refX="18" refY="7" markerWidth="20" markerHeight="28" orient="auto">
+              <path d="M 18 7 L 9 13 L 14 7 L 9 1 Z" />
+            </marker>
+          </defs>
+          <defs>
+            <marker id="sequencenumber" refX="15" refY="15" markerWidth="60" markerHeight="40" orient="auto">
+              <circle cx="15" cy="15" r="6" />
+            </marker>
+          </defs>
+          <text class="messageText" style="font-family: &quot;trebuchet ms&quot;, verdana, arial, sans-serif; font-size: 16px; font-weight: 400;" alignment-baseline="middle" dominant-baseline="middle" text-anchor="middle" x="212" y="80" dy="1em">
+            回调React组件生命周期钩子
+          </text>
+          <line class="messageLine0" style="fill: none;" marker-end="url(&quot;#arrowhead&quot;)" stroke="none" stroke-width="2" x1="348" y1="117" x2="75" y2="117" />
+          <text class="messageText" style="font-family: &quot;trebuchet ms&quot;, verdana, arial, sans-serif; font-size: 16px; font-weight: 400;" alignment-baseline="middle" dominant-baseline="middle" text-anchor="middle" x="75" y="132" dy="1em">
+            触发组件state变动
+          </text>
+          <path class="messageLine0" style="fill: none;" marker-end="url(&quot;#arrowhead&quot;)" stroke="none" stroke-width="2" d="M 75 169 C 135 159 135 199 75 189" />
+          <text class="messageText" style="font-family: &quot;trebuchet ms&quot;, verdana, arial, sans-serif; font-size: 16px; font-weight: 400;" alignment-baseline="middle" dominant-baseline="middle" text-anchor="middle" x="212" y="214" dy="1em">
+            监听到组件变动
+          </text>
+          <line class="messageLine0" style="fill: none;" marker-end="url(&quot;#arrowhead&quot;)" stroke="none" stroke-width="2" x1="75" y1="247" x2="348" y2="247" />
+          <text class="messageText" style="font-family: &quot;trebuchet ms&quot;, verdana, arial, sans-serif; font-size: 16px; font-weight: 400;" alignment-baseline="middle" dominant-baseline="middle" text-anchor="middle" x="348" y="262" dy="1em">
+            更新vDom, 计算新vDom操作指令
+          </text>
+          <path class="messageLine0" style="fill: none;" marker-end="url(&quot;#arrowhead&quot;)" stroke="none" stroke-width="2" d="M 348 299 C 408 289 408 329 348 319" />
+          <text class="messageText" style="font-family: &quot;trebuchet ms&quot;, verdana, arial, sans-serif; font-size: 16px; font-weight: 400;" alignment-baseline="middle" dominant-baseline="middle" text-anchor="middle" x="455" y="344" dy="1em">
+            输出vDom操作逻辑
+          </text>
+          <line class="messageLine0" style="fill: none;" marker-end="url(&quot;#arrowhead&quot;)" stroke="none" stroke-width="2" x1="348" y1="381" x2="561" y2="381" />
+          <text class="messageText" style="font-family: &quot;trebuchet ms&quot;, verdana, arial, sans-serif; font-size: 16px; font-weight: 400;" alignment-baseline="middle" dominant-baseline="middle" text-anchor="middle" x="561" y="396" dy="1em">
+            将vDom指令转换为实际Dom构建指令,渲染界面
+          </text>
+          <path class="messageLine0" style="fill: none;" marker-end="url(&quot;#arrowhead&quot;)" stroke="none" stroke-width="2" d="M 561 433 C 621 423 621 463 561 453" />
+          <g>
+            <rect class="actor" fill="#eaeaea" stroke="#666" x="0" y="483" width="150" height="65" rx="3" ry="3" />
+            <text class="actor" style="font-family: Open-Sans, &quot;sans-serif&quot;; font-size: 14px; font-weight: 400; text-anchor: middle;" alignment-baseline="central" dominant-baseline="central" x="75" y="515.5">
+              <tspan x="75" dy="0">业务方</tspan>
+            </text>
+          </g>
+          <g>
+            <rect class="actor" fill="#eaeaea" stroke="#666" x="273" y="483" width="150" height="65" rx="3" ry="3" />
+            <text class="actor" style="font-family: Open-Sans, &quot;sans-serif&quot;; font-size: 14px; font-weight: 400; text-anchor: middle;" alignment-baseline="central" dominant-baseline="central" x="348" y="515.5">
+              <tspan x="348" dy="0">Reconciler</tspan>
+            </text>
+          </g>
+          <g>
+            <rect class="actor" fill="#eaeaea" stroke="#666" x="486" y="483" width="150" height="65" rx="3" ry="3" />
+            <text class="actor" style="font-family: Open-Sans, &quot;sans-serif&quot;; font-size: 14px; font-weight: 400; text-anchor: middle;" alignment-baseline="central" dominant-baseline="central" x="561" y="515.5">
+              <tspan x="561" dy="0">WebviewRender</tspan>
+            </text>
+          </g>
+        </svg>

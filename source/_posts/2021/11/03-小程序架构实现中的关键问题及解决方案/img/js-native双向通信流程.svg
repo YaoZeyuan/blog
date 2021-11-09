@@ -1,0 +1,302 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="mermaid-1636442163617" style="max-width: 1371px;" viewBox="-50 -10 1371 1587" width="100%" height="1587">
+          <style>
+            #mermaid-1636442163617 {
+              font-family: "trebuchet ms", verdana, arial, sans-serif;
+              font-size: 16px;
+              fill: #333;
+            }
+            #mermaid-1636442163617 .error-icon {
+              fill: #552222;
+            }
+            #mermaid-1636442163617 .error-text {
+              fill: #552222;
+              stroke: #552222;
+            }
+            #mermaid-1636442163617 .edge-thickness-normal {
+              stroke-width: 2px;
+            }
+            #mermaid-1636442163617 .edge-thickness-thick {
+              stroke-width: 3.5px;
+            }
+            #mermaid-1636442163617 .edge-pattern-solid {
+              stroke-dasharray: 0;
+            }
+            #mermaid-1636442163617 .edge-pattern-dashed {
+              stroke-dasharray: 3;
+            }
+            #mermaid-1636442163617 .edge-pattern-dotted {
+              stroke-dasharray: 2;
+            }
+            #mermaid-1636442163617 .marker {
+              fill: #333333;
+              stroke: #333333;
+            }
+            #mermaid-1636442163617 .marker.cross {
+              stroke: #333333;
+            }
+            #mermaid-1636442163617 svg {
+              font-family: "trebuchet ms", verdana, arial, sans-serif;
+              font-size: 16px;
+            }
+            #mermaid-1636442163617 .actor {
+              stroke: hsl(259.6261682243, 59.7765363128%, 87.9019607843%);
+              fill: #ececff;
+            }
+            #mermaid-1636442163617 text.actor &gt;
+            tspan {
+              fill: black;
+              stroke: none;
+            }
+            #mermaid-1636442163617 .actor-line {
+              stroke: grey;
+            }
+            #mermaid-1636442163617 .messageLine0 {
+              stroke-width: 1.5;
+              stroke-dasharray: none;
+              stroke: #333;
+            }
+            #mermaid-1636442163617 .messageLine1 {
+              stroke-width: 1.5;
+              stroke-dasharray: 2, 2;
+              stroke: #333;
+            }
+            #mermaid-1636442163617 #arrowhead path {
+              fill: #333;
+              stroke: #333;
+            }
+            #mermaid-1636442163617 .sequenceNumber {
+              fill: white;
+            }
+            #mermaid-1636442163617 #sequencenumber {
+              fill: #333;
+            }
+            #mermaid-1636442163617 #crosshead path {
+              fill: #333;
+              stroke: #333;
+            }
+            #mermaid-1636442163617 .messageText {
+              fill: #333;
+              stroke: #333;
+            }
+            #mermaid-1636442163617 .labelBox {
+              stroke: hsl(259.6261682243, 59.7765363128%, 87.9019607843%);
+              fill: #ececff;
+            }
+            #mermaid-1636442163617 .labelText,
+            #mermaid-1636442163617 .labelText &gt;
+            tspan {
+              fill: black;
+              stroke: none;
+            }
+            #mermaid-1636442163617 .loopText,
+            #mermaid-1636442163617 .loopText &gt;
+            tspan {
+              fill: black;
+              stroke: none;
+            }
+            #mermaid-1636442163617 .loopLine {
+              stroke-width: 2px;
+              stroke-dasharray: 2, 2;
+              stroke: hsl(259.6261682243, 59.7765363128%, 87.9019607843%);
+              fill: hsl(259.6261682243, 59.7765363128%, 87.9019607843%);
+            }
+            #mermaid-1636442163617 .note {
+              stroke: #aaaa33;
+              fill: #fff5ad;
+            }
+            #mermaid-1636442163617 .noteText,
+            #mermaid-1636442163617 .noteText &gt;
+            tspan {
+              fill: black;
+              stroke: none;
+            }
+            #mermaid-1636442163617 .activation0 {
+              fill: #f4f4f4;
+              stroke: #666;
+            }
+            #mermaid-1636442163617 .activation1 {
+              fill: #f4f4f4;
+              stroke: #666;
+            }
+            #mermaid-1636442163617 .activation2 {
+              fill: #f4f4f4;
+              stroke: #666;
+            }
+            #mermaid-1636442163617:root {
+              --mermaid-font-family: "trebuchet ms", verdana, arial, sans-serif;
+            }
+          </style>
+          <g />
+          <g>
+            <line class="actor-line" id="actor0" stroke="#999" stroke-width="0.5px" x1="75" y1="5" x2="75" y2="1576" />
+            <rect class="actor" fill="#eaeaea" stroke="#666" x="0" y="0" width="150" height="65" rx="3" ry="3" />
+            <text class="actor" style="font-family: Open-Sans, &quot;sans-serif&quot;; font-size: 14px; font-weight: 400; text-anchor: middle;" alignment-baseline="central" dominant-baseline="central" x="75" y="32.5">
+              <tspan x="75" dy="0">业务方</tspan>
+            </text>
+          </g>
+          <g>
+            <line class="actor-line" id="actor1" stroke="#999" stroke-width="0.5px" x1="601" y1="5" x2="601" y2="1576" />
+            <rect class="actor" fill="#eaeaea" stroke="#666" x="526" y="0" width="150" height="65" rx="3" ry="3" />
+            <text class="actor" style="font-family: Open-Sans, &quot;sans-serif&quot;; font-size: 14px; font-weight: 400; text-anchor: middle;" alignment-baseline="central" dominant-baseline="central" x="601" y="32.5">
+              <tspan x="601" dy="0">基础库</tspan>
+            </text>
+          </g>
+          <g>
+            <line class="actor-line" id="actor2" stroke="#999" stroke-width="0.5px" x1="1165" y1="5" x2="1165" y2="1576" />
+            <rect class="actor" fill="#eaeaea" stroke="#666" x="1090" y="0" width="150" height="65" rx="3" ry="3" />
+            <text class="actor" style="font-family: Open-Sans, &quot;sans-serif&quot;; font-size: 14px; font-weight: 400; text-anchor: middle;" alignment-baseline="central" dominant-baseline="central" x="1165" y="32.5">
+              <tspan x="1165" dy="0">Native</tspan>
+            </text>
+          </g>
+          <defs>
+            <marker id="arrowhead" refX="9" refY="5" markerUnits="userSpaceOnUse" markerWidth="12" markerHeight="12" orient="auto">
+              <path d="M 0 0 L 10 5 L 0 10 Z" />
+            </marker>
+          </defs>
+          <defs>
+            <marker id="crosshead" refX="16" refY="4" markerWidth="15" markerHeight="8" orient="auto">
+              <path style="stroke-dasharray: 0,0;" fill="black" stroke="#000000" stroke-width="1px" d="M 9 2 V 6 L 16 4 Z" />
+              <path style="stroke-dasharray: 0,0;" fill="none" stroke="#000000" stroke-width="1px" d="M 0 1 L 6 7 M 6 1 L 0 7" />
+            </marker>
+          </defs>
+          <defs>
+            <marker id="filled-head" refX="18" refY="7" markerWidth="20" markerHeight="28" orient="auto">
+              <path d="M 18 7 L 9 13 L 14 7 L 9 1 Z" />
+            </marker>
+          </defs>
+          <defs>
+            <marker id="sequencenumber" refX="15" refY="15" markerWidth="60" markerHeight="40" orient="auto">
+              <circle cx="15" cy="15" r="6" />
+            </marker>
+          </defs>
+          <g>
+            <rect class="note" fill="#edf2ae" stroke="#666" x="50" y="75" width="1140" height="36" rx="0" ry="0" />
+            <text class="noteText" style="font-family: &quot;trebuchet ms&quot;, verdana, arial, sans-serif; font-size: 14px; font-weight: 400;" alignment-baseline="middle" dominant-baseline="middle" text-anchor="middle" x="620" y="80" dy="1em">
+              <tspan x="620">js-Native双向通信流程</tspan>
+            </text>
+          </g>
+          <g>
+            <rect class="note" fill="#edf2ae" stroke="#666" x="50" y="121" width="1140" height="36" rx="0" ry="0" />
+            <text class="noteText" style="font-family: &quot;trebuchet ms&quot;, verdana, arial, sans-serif; font-size: 14px; font-weight: 400;" alignment-baseline="middle" dominant-baseline="middle" text-anchor="middle" x="620" y="126" dy="1em">
+              <tspan x="620">初始命令id:40</tspan>
+            </text>
+          </g>
+          <g>
+            <rect class="note" fill="#edf2ae" stroke="#666" x="50" y="167" width="1140" height="36" rx="0" ry="0" />
+            <text class="noteText" style="font-family: &quot;trebuchet ms&quot;, verdana, arial, sans-serif; font-size: 14px; font-weight: 400;" alignment-baseline="middle" dominant-baseline="middle" text-anchor="middle" x="620" y="172" dy="1em">
+              <tspan x="620">第一次调用原生接口</tspan>
+            </text>
+          </g>
+          <text class="messageText" style="font-family: &quot;trebuchet ms&quot;, verdana, arial, sans-serif; font-size: 16px; font-weight: 400;" alignment-baseline="middle" dominant-baseline="middle" text-anchor="middle" x="338" y="218" dy="1em">
+            调用原生应用接口1
+          </text>
+          <line class="messageLine1" style="fill: none; stroke-dasharray: 3,3;" marker-end="url(&quot;#filled-head&quot;)" stroke="none" stroke-width="2" x1="75" y1="255" x2="601" y2="255" />
+          <text class="messageText" style="font-family: &quot;trebuchet ms&quot;, verdana, arial, sans-serif; font-size: 16px; font-weight: 400;" alignment-baseline="middle" dominant-baseline="middle" text-anchor="middle" x="601" y="270" dy="1em">
+            命令id+1 =&gt; 41 , 在待回调对象中注册命令41, 等待原生接口执行完成
+          </text>
+          <path class="messageLine1" style="fill: none; stroke-dasharray: 3,3;" marker-end="url(&quot;#filled-head&quot;)" stroke="none" stroke-width="2" d="M 601 307 C 661 297 661 337 601 327" />
+          <text class="messageText" style="font-family: &quot;trebuchet ms&quot;, verdana, arial, sans-serif; font-size: 16px; font-weight: 400;" alignment-baseline="middle" dominant-baseline="middle" text-anchor="middle" x="883" y="352" dy="1em">
+            调用 传入命令id:41, 接口名1, 参数值. 控制流交给Native, V8暂停执行
+          </text>
+          <line class="messageLine1" style="fill: none; stroke-dasharray: 3,3;" marker-end="url(&quot;#filled-head&quot;)" stroke="none" stroke-width="2" x1="601" y1="385" x2="1165" y2="385" />
+          <text class="messageText" style="font-family: &quot;trebuchet ms&quot;, verdana, arial, sans-serif; font-size: 16px; font-weight: 400;" alignment-baseline="middle" dominant-baseline="middle" text-anchor="middle" x="883" y="400" dy="1em">
+            读取命令id:41, 待调用接口名1, 参数值. 结束函数执行, 恢复V8运行
+          </text>
+          <line class="messageLine1" style="fill: none; stroke-dasharray: 3,3;" marker-end="url(&quot;#filled-head&quot;)" stroke="none" stroke-width="2" x1="1165" y1="433" x2="601" y2="433" />
+          <text class="messageText" style="font-family: &quot;trebuchet ms&quot;, verdana, arial, sans-serif; font-size: 16px; font-weight: 400;" alignment-baseline="middle" dominant-baseline="middle" text-anchor="middle" x="338" y="448" dy="1em">
+            原生应用接口1调用完成, 通知业务方等待回调
+          </text>
+          <line class="messageLine1" style="fill: none; stroke-dasharray: 3,3;" marker-end="url(&quot;#filled-head&quot;)" stroke="none" stroke-width="2" x1="601" y1="481" x2="75" y2="481" />
+          <text class="messageText" style="font-family: &quot;trebuchet ms&quot;, verdana, arial, sans-serif; font-size: 16px; font-weight: 400;" alignment-baseline="middle" dominant-baseline="middle" text-anchor="middle" x="1165" y="496" dy="1em">
+            执行接口1调用
+          </text>
+          <path class="messageLine1" style="fill: none; stroke-dasharray: 3,3;" marker-end="url(&quot;#filled-head&quot;)" stroke="none" stroke-width="2" d="M 1165 533 C 1225 523 1225 563 1165 553" />
+          <g>
+            <rect class="note" fill="#edf2ae" stroke="#666" x="50" y="573" width="1140" height="36" rx="0" ry="0" />
+            <text class="noteText" style="font-family: &quot;trebuchet ms&quot;, verdana, arial, sans-serif; font-size: 14px; font-weight: 400;" alignment-baseline="middle" dominant-baseline="middle" text-anchor="middle" x="620" y="578" dy="1em">
+              <tspan x="620">第二次调用原生接口</tspan>
+            </text>
+          </g>
+          <text class="messageText" style="font-family: &quot;trebuchet ms&quot;, verdana, arial, sans-serif; font-size: 16px; font-weight: 400;" alignment-baseline="middle" dominant-baseline="middle" text-anchor="middle" x="338" y="624" dy="1em">
+            调用原生应用接口2
+          </text>
+          <line class="messageLine0" style="fill: none;" marker-end="url(&quot;#arrowhead&quot;)" stroke="none" stroke-width="2" x1="75" y1="661" x2="601" y2="661" />
+          <text class="messageText" style="font-family: &quot;trebuchet ms&quot;, verdana, arial, sans-serif; font-size: 16px; font-weight: 400;" alignment-baseline="middle" dominant-baseline="middle" text-anchor="middle" x="601" y="676" dy="1em">
+            命令id+1 =&gt; 42 , 在待回调对象中注册命令42, 等待原生接口执行完成
+          </text>
+          <path class="messageLine0" style="fill: none;" marker-end="url(&quot;#arrowhead&quot;)" stroke="none" stroke-width="2" d="M 601 713 C 661 703 661 743 601 733" />
+          <text class="messageText" style="font-family: &quot;trebuchet ms&quot;, verdana, arial, sans-serif; font-size: 16px; font-weight: 400;" alignment-baseline="middle" dominant-baseline="middle" text-anchor="middle" x="883" y="758" dy="1em">
+            调用 传入命令id:42, 接口名2, 参数值. 控制流交给Native, V8暂停执行
+          </text>
+          <line class="messageLine0" style="fill: none;" marker-end="url(&quot;#arrowhead&quot;)" stroke="none" stroke-width="2" x1="601" y1="791" x2="1165" y2="791" />
+          <text class="messageText" style="font-family: &quot;trebuchet ms&quot;, verdana, arial, sans-serif; font-size: 16px; font-weight: 400;" alignment-baseline="middle" dominant-baseline="middle" text-anchor="middle" x="883" y="806" dy="1em">
+            读取命令id:42, 待调用接口名2, 参数值. 结束函数执行, 恢复V8运行
+          </text>
+          <line class="messageLine0" style="fill: none;" marker-end="url(&quot;#arrowhead&quot;)" stroke="none" stroke-width="2" x1="1165" y1="839" x2="601" y2="839" />
+          <text class="messageText" style="font-family: &quot;trebuchet ms&quot;, verdana, arial, sans-serif; font-size: 16px; font-weight: 400;" alignment-baseline="middle" dominant-baseline="middle" text-anchor="middle" x="338" y="854" dy="1em">
+            原生应用接口2调用完成, 通知业务方等待回调
+          </text>
+          <line class="messageLine0" style="fill: none;" marker-end="url(&quot;#arrowhead&quot;)" stroke="none" stroke-width="2" x1="601" y1="887" x2="75" y2="887" />
+          <g>
+            <rect class="note" fill="#edf2ae" stroke="#666" x="50" y="897" width="1140" height="36" rx="0" ry="0" />
+            <text class="noteText" style="font-family: &quot;trebuchet ms&quot;, verdana, arial, sans-serif; font-size: 14px; font-weight: 400;" alignment-baseline="middle" dominant-baseline="middle" text-anchor="middle" x="620" y="902" dy="1em">
+              <tspan x="620">第一次调用原生接口执行完成</tspan>
+            </text>
+          </g>
+          <text class="messageText" style="font-family: &quot;trebuchet ms&quot;, verdana, arial, sans-serif; font-size: 16px; font-weight: 400;" alignment-baseline="middle" dominant-baseline="middle" text-anchor="middle" x="1165" y="948" dy="1em">
+            接口1调用执行完成, 得到结果
+          </text>
+          <path class="messageLine1" style="fill: none; stroke-dasharray: 3,3;" marker-end="url(&quot;#filled-head&quot;)" stroke="none" stroke-width="2" d="M 1165 981 C 1225 971 1225 1011 1165 1001" />
+          <text class="messageText" style="font-family: &quot;trebuchet ms&quot;, verdana, arial, sans-serif; font-size: 16px; font-weight: 400;" alignment-baseline="middle" dominant-baseline="middle" text-anchor="middle" x="883" y="1026" dy="1em">
+            调用基础库回调接口, 返回命令id:41 对应的返回结果
+          </text>
+          <line class="messageLine1" style="fill: none; stroke-dasharray: 3,3;" marker-end="url(&quot;#filled-head&quot;)" stroke="none" stroke-width="2" x1="1165" y1="1059" x2="601" y2="1059" />
+          <text class="messageText" style="font-family: &quot;trebuchet ms&quot;, verdana, arial, sans-serif; font-size: 16px; font-weight: 400;" alignment-baseline="middle" dominant-baseline="middle" text-anchor="middle" x="601" y="1074" dy="1em">
+            解析Native在调用中传入的参数, 找到待回调对象中id为41所对应的回调
+          </text>
+          <path class="messageLine1" style="fill: none; stroke-dasharray: 3,3;" marker-end="url(&quot;#filled-head&quot;)" stroke="none" stroke-width="2" d="M 601 1111 C 661 1101 661 1141 601 1131" />
+          <text class="messageText" style="font-family: &quot;trebuchet ms&quot;, verdana, arial, sans-serif; font-size: 16px; font-weight: 400;" alignment-baseline="middle" dominant-baseline="middle" text-anchor="middle" x="338" y="1156" dy="1em">
+            执行命令41对应的回调函数, 通知业务方回调完成, 返回调用结果
+          </text>
+          <line class="messageLine1" style="fill: none; stroke-dasharray: 3,3;" marker-end="url(&quot;#filled-head&quot;)" stroke="none" stroke-width="2" x1="601" y1="1189" x2="75" y2="1189" />
+          <g>
+            <rect class="note" fill="#edf2ae" stroke="#666" x="50" y="1199" width="1140" height="36" rx="0" ry="0" />
+            <text class="noteText" style="font-family: &quot;trebuchet ms&quot;, verdana, arial, sans-serif; font-size: 14px; font-weight: 400;" alignment-baseline="middle" dominant-baseline="middle" text-anchor="middle" x="620" y="1204" dy="1em">
+              <tspan x="620">第一二次调用原生接口执行完成</tspan>
+            </text>
+          </g>
+          <text class="messageText" style="font-family: &quot;trebuchet ms&quot;, verdana, arial, sans-serif; font-size: 16px; font-weight: 400;" alignment-baseline="middle" dominant-baseline="middle" text-anchor="middle" x="1165" y="1250" dy="1em">
+            接口2调用执行完成, 得到结果
+          </text>
+          <path class="messageLine0" style="fill: none;" marker-end="url(&quot;#arrowhead&quot;)" stroke="none" stroke-width="2" d="M 1165 1283 C 1225 1273 1225 1313 1165 1303" />
+          <text class="messageText" style="font-family: &quot;trebuchet ms&quot;, verdana, arial, sans-serif; font-size: 16px; font-weight: 400;" alignment-baseline="middle" dominant-baseline="middle" text-anchor="middle" x="883" y="1328" dy="1em">
+            调用基础库回调接口, 返回命令id:42 对应的返回结果
+          </text>
+          <line class="messageLine0" style="fill: none;" marker-end="url(&quot;#arrowhead&quot;)" stroke="none" stroke-width="2" x1="1165" y1="1361" x2="601" y2="1361" />
+          <text class="messageText" style="font-family: &quot;trebuchet ms&quot;, verdana, arial, sans-serif; font-size: 16px; font-weight: 400;" alignment-baseline="middle" dominant-baseline="middle" text-anchor="middle" x="601" y="1376" dy="1em">
+            解析Native在调用中传入的参数, 找到待回调对象中id为42所对应的回调
+          </text>
+          <path class="messageLine0" style="fill: none;" marker-end="url(&quot;#arrowhead&quot;)" stroke="none" stroke-width="2" d="M 601 1413 C 661 1403 661 1443 601 1433" />
+          <text class="messageText" style="font-family: &quot;trebuchet ms&quot;, verdana, arial, sans-serif; font-size: 16px; font-weight: 400;" alignment-baseline="middle" dominant-baseline="middle" text-anchor="middle" x="338" y="1458" dy="1em">
+            执行命令42对应的回调函数, 通知业务方回调完成, 返回调用结果
+          </text>
+          <line class="messageLine0" style="fill: none;" marker-end="url(&quot;#arrowhead&quot;)" stroke="none" stroke-width="2" x1="601" y1="1491" x2="75" y2="1491" />
+          <g>
+            <rect class="actor" fill="#eaeaea" stroke="#666" x="0" y="1511" width="150" height="65" rx="3" ry="3" />
+            <text class="actor" style="font-family: Open-Sans, &quot;sans-serif&quot;; font-size: 14px; font-weight: 400; text-anchor: middle;" alignment-baseline="central" dominant-baseline="central" x="75" y="1543.5">
+              <tspan x="75" dy="0">业务方</tspan>
+            </text>
+          </g>
+          <g>
+            <rect class="actor" fill="#eaeaea" stroke="#666" x="526" y="1511" width="150" height="65" rx="3" ry="3" />
+            <text class="actor" style="font-family: Open-Sans, &quot;sans-serif&quot;; font-size: 14px; font-weight: 400; text-anchor: middle;" alignment-baseline="central" dominant-baseline="central" x="601" y="1543.5">
+              <tspan x="601" dy="0">基础库</tspan>
+            </text>
+          </g>
+          <g>
+            <rect class="actor" fill="#eaeaea" stroke="#666" x="1090" y="1511" width="150" height="65" rx="3" ry="3" />
+            <text class="actor" style="font-family: Open-Sans, &quot;sans-serif&quot;; font-size: 14px; font-weight: 400; text-anchor: middle;" alignment-baseline="central" dominant-baseline="central" x="1165" y="1543.5">
+              <tspan x="1165" dy="0">Native</tspan>
+            </text>
+          </g>
+        </svg>
