@@ -1,0 +1,22 @@
+@startuml
+
+autonumber
+
+title: 启动hybrid应用
+
+==首次启动==
+
+用户--> webview : 进入页面
+webview--> 服务器 : 下载静态资源
+服务器 --> webview : 返回静态资源
+webview --> webview : 执行js, 渲染dom
+webview --> 用户: 启动完成
+
+==二次启动==
+
+用户--> webview : 进入页面
+webview--> webview : 加载已缓存的静态资源
+webview --> webview : 执行js, 渲染dom
+webview --> 用户: 启动完成
+
+@enduml

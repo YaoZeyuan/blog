@@ -1,0 +1,32 @@
+@startuml
+
+autonumber
+
+title: 启动微信小程序
+
+==首次启动==
+
+用户--> Native : 进入页面
+Native--> 服务器 : 传入app_id, 请求小程序静态资源
+服务器 --> Native : 返回静态资源配置
+Native--> 服务器 : 下载静态资源
+服务器 --> Native : 返回静态资源文件
+Native --> Native : 校验静态资源文件完整性
+Native --> Native : 解包静态资源文件
+Native --> Native : 启动v8引擎, 运行js
+Native --> Native : 启动webview, 渲染dom
+Native --> 用户: 启动完成
+
+==二次启动==
+
+用户--> Native : 进入页面
+Native--> 服务器 : 传入app_id, 请求小程序静态资源
+服务器 --> Native : 返回静态资源配置
+Native --> Native : 校验本地静态资源文件完整性, 使用本地缓存
+Native --> Native : 解包静态资源文件
+Native --> Native : 启动v8引擎, 运行js
+Native --> Native : 启动webview, 渲染dom
+Native --> 用户: 启动完成
+
+
+@enduml
