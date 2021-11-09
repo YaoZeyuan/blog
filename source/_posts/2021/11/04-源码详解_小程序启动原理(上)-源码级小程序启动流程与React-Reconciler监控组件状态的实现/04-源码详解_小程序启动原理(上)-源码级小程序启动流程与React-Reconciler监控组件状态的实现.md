@@ -39,7 +39,7 @@ mermaid: true
 
 小程序启动示例代码如下所示
 
-```tsx
+```ts
 // 最简小程序模型.
 // https://github.dev/remaxjs/remax/blob/v2.15.0/packages/remax-runtime/src/__tests__/index.test.tsx#L53
 import Container from "@remax/remax-runtime/Container";
