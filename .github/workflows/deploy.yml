@@ -22,7 +22,8 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           # 部署到YaoZeyuan.github.io上
-          deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
+          # deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
           external_repository: YaoZeyuan/YaoZeyuan.github.io
           publish_branch: master
           publish_dir: ./public
