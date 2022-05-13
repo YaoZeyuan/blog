@@ -10,22 +10,7 @@ hexo server
 
 就能在本地进行调试.
 
-`baidu_analytics`和`gitcommit`的配置项在`source/_data/next.yml`中, 安全起见 ignore 掉了
-
-配置文件 demo =>
-
-```yaml
-baidu_analytics: 12313123123
-
-gitalk:
-  enable: true
-  githubID: YaoZeyuan # 例：Introspelliam
-  repo: YaoZeyuan.github.io # 例：Introspelliam.github.io
-  ClientID: xxxxxxxxxxxxxxxxxxxxxx
-  ClientSecret: xxxxxxxxxxxxxxxxxxxxxx
-  adminUser: YaoZeyuan #指定可初始化评论账户
-  distractionFreeMode: true
-```
+push 到 master 后自动部署
 
 博客地址 => [https://www.yaozeyuan.online](https://www.yaozeyuan.online)
 
