@@ -21,7 +21,7 @@ tags:
         3.  [调试进阶](https://www.yaozeyuan.online/2018/05/18/2018/05/Chrome调试进阶/)
     2.  VSCode
         1.  VSCode 的 remote 模式可以作为 XShell 的替代品
-        2.  ![使用方式](https://ww1.sinaimg.cn/large/6671cfa8ly1gh1aldo25cj20sq0lg76y.jpg)
+        2.  ![使用方式](https://tva1.sinaimg.cn/large/6671cfa8ly1gh1aldo25cj20sq0lg76y.jpg)
     3.  KeePass
 5.  密码库在 onedrive 里，需要用 keepass 打开，所以要先装 keepass。装完顺手把 onedrive 里的中文语言文件（Chinese_Simplified.lngx）扔到`C:/Program Files (x86)/KeePass Password Safe 2/LanguagesLanguange`下，齐活
 6.  有了 keepass，v2ray，然后就可以登陆 chrome 账号，让 chrome 在后台同步插件/书签/浏览记录不表

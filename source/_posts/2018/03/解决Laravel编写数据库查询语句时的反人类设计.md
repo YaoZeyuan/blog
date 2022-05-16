@@ -10,9 +10,9 @@ Laravel 本身是一个很好用的框架, 但是每次查询数据库的时候,
 
 截图如下
 
-![Base类](https://ww1.sinaimg.cn/large/6671cfa8ly1fpk7hijeb3j20g50ah0sz.jpg)
+![Base类](https://tva1.sinaimg.cn/large/6671cfa8ly1fpk7hijeb3j20g50ah0sz.jpg)
 
-![实际查询](https://ww1.sinaimg.cn/large/6671cfa8ly1fpk7hu5263j20k80cxjsd.jpg)
+![实际查询](https://tva1.sinaimg.cn/large/6671cfa8ly1fpk7hu5263j20k80cxjsd.jpg)
 
 PS:
 
