@@ -32,7 +32,7 @@ skip_render:
 new_post_name: :title.md # File name of new posts
 default_layout: post
 titlecase: false # Transform title into titlecase
-external_link: true # Open external links in new tab
+external_link.enable: true # Open external links in new tab
 filename_case: 0
 render_drafts: false
 post_asset_folder: false
@@ -84,25 +84,25 @@ deploy:
 
 # 配置markdown渲染器
 markdown:
-  preset: 'default'
+  preset: "default"
   render:
     html: true
     xhtmlOut: false
-    langPrefix: 'language-'
+    langPrefix: "language-"
     breaks: true
     linkify: true
     typographer: true
-    quotes: '“”‘’'
+    quotes: "“”‘’"
   enable_rules:
   disable_rules:
   plugins:
-   - markdown-it-footnote
+    - markdown-it-footnote
   anchors:
     level: 2
-    collisionSuffix: ''
+    collisionSuffix: ""
     permalink: false
-    permalinkClass: 'header-anchor'
-    permalinkSide: 'left'
-    permalinkSymbol: '¶'
+    permalinkClass: "header-anchor"
+    permalinkSide: "left"
+    permalinkSymbol: "¶"
     case: 0
-    separator: '-'
+    separator: "-"
