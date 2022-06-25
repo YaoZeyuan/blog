@@ -1,0 +1,9 @@
+.image-caption {
+  /* 图片文字居中 */
+  text-align: center;
+}
+
+.hidden-scroll-bar::-webkit-scrollbar {
+  /* 隐藏滚动条 */
+  display: none;
+}
