@@ -19,9 +19,9 @@ title_join_string: " - " # 浏览器标签页中的标题分隔符，效果： �
 
 force_https: true # 强制所有链接升级为 HTTPS（适用于图片等资源出现 HTTP 混入报错）
 static_prefix:
-  internal_js: "https://cdn.jsdelivr.net/gh/YaoZeyuan/YaoZeyuan.github.io@master/js/"
-  internal_css: "https://cdn.jsdelivr.net/gh/YaoZeyuan/YaoZeyuan.github.io@master/css/"
-  internal_img: "https://cdn.jsdelivr.net/gh/YaoZeyuan/YaoZeyuan.github.io@master/img/"
+  internal_js: "/js/"
+  internal_css: "/css/"
+  internal_img: "/img/"
 
 code: # 代码块相关的配置
   copy_btn: true # 是否开启复制代码的按钮
@@ -122,7 +122,7 @@ aplayer: # 音乐播放器，注意不能与 hexo-tag-aplayer 插件共用
         name: "name",
         artist: "artist",
         url: "/songs/test.mp3",
-        cover: "https://cdn.jsdelivr.net/gh/YaoZeyuan/YaoZeyuan.github.io@master/img/cover.jpg",
+        cover: "/img/cover.jpg",
       }
     - {
         name: "name",
@@ -158,7 +158,7 @@ navbar:
 
 search: # 搜索栏，基于 hexo-generator-search 插件，若已安装其他搜索插件请关闭此功能，以避免生成多余的索引文件。
   enable: true
-  path: https://cdn.jsdelivr.net/gh/YaoZeyuan/YaoZeyuan.github.io@master/local-search.xml # 文件引用地址，默认是下方生成位置，也可以将生成后的 local-search.xml 上传到其它位置引用，如：https://www.example.com/local-search.xml
+  path: /local-search.xml # 文件引用地址，默认是下方生成位置，也可以将生成后的 local-search.xml 上传到其它位置引用，如：https://www.example.com/local-search.xml
   generate_path: /local-search.xml # 文件生成位置，必须为相对位置
   field: post
   content: true
@@ -190,10 +190,10 @@ footer:
 
   beian: # The footer of China's website policy, other areas keep disable
     enable: false
-    icp_text: 京ICP证123456号 # ICP证号
-    police_text: 京公网安备12345678号 # 公安备案号，不填则只显示ICP
-    police_code: 12345678 # 公安备案的编号，用于URL跳转查询
-    police_icon: https://cdn.jsdelivr.net/gh/YaoZeyuan/YaoZeyuan.github.io@master/img/police_beian.png # 公安备案的图片. 为空时不显示备案图片
+    icp_text: 京ICP备17010770号 # ICP证号
+    police_text: 京ICP备17010770号 # 公安备案号，不填则只显示ICP
+    police_code: 17010770 # 公安备案的编号，用于URL跳转查询
+    police_icon: /img/police_beian.png # 公安备案的图片. 为空时不显示备案图片
 
 scroll_top_arrow: # 向顶部滚动的箭头
   enable: true
@@ -203,7 +203,7 @@ scroll_top_arrow: # 向顶部滚动的箭头
 # Index Page
 #---------------------------
 index:
-  banner_img: https://cdn.jsdelivr.net/gh/YaoZeyuan/YaoZeyuan.github.io@master/img/default.png # 首页 Banner 头图，以下相同
+  banner_img: /static/img/banner/background-img.webp # 首页 Banner 头图，以下相同
   banner_img_height: 100 # 头图高度，屏幕百分比，available: 0 - 100
   banner_mask_alpha: 0.3 # 头图黑色蒙版的透明度，available: 0 - 1.0， 0 是完全透明（无蒙版），1 是完全不透明
   post_default_img: "" # 默认的文章封面图，当没有指定 index_img 时会使用该图片，若都为空则不显示任何图片
@@ -221,7 +221,7 @@ index:
 # 通过 hexo new page 命令创建的页面
 # Custom Page
 page:
-  banner_img: https://cdn.jsdelivr.net/gh/YaoZeyuan/YaoZeyuan.github.io@master/img/default.png
+  banner_img: /static/img/banner/background-img.webp
   banner_img_height: 60 # available: 0 - 100
   banner_mask_alpha: 0.3 # available: 0 - 1.0
 
@@ -230,7 +230,7 @@ page:
 # Post Page
 #---------------------------
 post: # 部分配置同时控制自定义页面，注意备注
-  banner_img: https://cdn.jsdelivr.net/gh/YaoZeyuan/YaoZeyuan.github.io@master/img/default.png
+  banner_img: /static/img/banner/background-img.webp
   banner_img_height: 70 # available: 0 - 100
   banner_mask_alpha: 0.3 # available: 0 - 1.0
   meta: # 文章标题下方的信息
@@ -376,7 +376,7 @@ archive:
 # Categories Page
 #---------------------------
 category:
-  banner_img: https://cdn.jsdelivr.net/gh/YaoZeyuan/YaoZeyuan.github.io@master/img/default.png
+  banner_img: /static/img/banner/background-img.webp
   banner_img_height: 60 # available: 0 - 100
   banner_mask_alpha: 0.3 # available: 0 - 1.0
   subtitle: # 打字机内容
@@ -389,7 +389,7 @@ category:
 # Tags Page
 #---------------------------
 tag:
-  banner_img: https://cdn.jsdelivr.net/gh/YaoZeyuan/YaoZeyuan.github.io@master/img/default.png
+  banner_img: /static/img/banner/background-img.webp
   banner_img_height: 80 # available: 0 - 100
   banner_mask_alpha: 0.3 # available: 0 - 1.0
   subtitle: # 打字机内容
@@ -405,7 +405,7 @@ tag:
 # About Page
 #---------------------------
 about: # 关于页需要手动创建，具体请见：https://hexo.fluid-dev.com/docs/guide/#%E5%85%B3%E4%BA%8E%E9%A1%B5
-  banner_img: https://cdn.jsdelivr.net/gh/YaoZeyuan/YaoZeyuan.github.io@master/img/default.png
+  banner_img: /static/img/banner/background-img.webp
   banner_img_height: 60 # available: 0 - 100
   banner_mask_alpha: 0.3 # available: 0 - 1.0
   subtitle: # 打字机内容
@@ -430,7 +430,7 @@ about: # 关于页需要手动创建，具体请见：https://hexo.fluid-dev.com
 # 404 Page
 #---------------------------
 page404:
-  banner_img: https://cdn.jsdelivr.net/gh/YaoZeyuan/YaoZeyuan.github.io@master/img/default.png
+  banner_img: /static/img/banner/background-img.webp
   banner_img_height: 85 # available: 0 - 100
   banner_mask_alpha: 0.3 # available: 0 - 1.0
   subtitle: "Page not found" # 打字机内容
@@ -440,7 +440,7 @@ page404:
 # Links Page
 #---------------------------
 links:
-  banner_img: https://cdn.jsdelivr.net/gh/YaoZeyuan/YaoZeyuan.github.io@master/img/default.png
+  banner_img: /static/img/banner/background-img.webp
   banner_img_height: 60 # available: 0 - 100
   banner_mask_alpha: 0.3 # available: 0 - 1.0
   subtitle: # 打字机内容
@@ -449,17 +449,17 @@ links:
         title: "Fluid Docs",
         intro: "主题使用指南",
         link: "https://hexo.fluid-dev.com/docs/",
-        image: "https://cdn.jsdelivr.net/gh/YaoZeyuan/YaoZeyuan.github.io@master/img/favicon.png",
+        image: "/img/favicon.png",
       }
     - {
         title: "Fluid Repo",
         intro: "主题 GitHub 仓库",
         link: "https://github.com/fluid-dev/hexo-theme-fluid",
-        image: "https://cdn.jsdelivr.net/gh/YaoZeyuan/YaoZeyuan.github.io@master/img/favicon.png",
+        image: "/img/favicon.png",
       }
     - {
         title: "Fluid Example",
         intro: "主题操作示例",
         link: "https://hexo.fluid-dev.com/docs/example/",
-        image: "https://cdn.jsdelivr.net/gh/YaoZeyuan/YaoZeyuan.github.io@master/img/favicon.png",
+        image: "/img/favicon.png",
       }
