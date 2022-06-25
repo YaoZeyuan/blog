@@ -1,6 +1,6 @@
 .image-caption {
   /* 图片文字居中 */
-  text-align: center;
+  /* text-align: center; */
 }
 
 .hidden-scroll-bar::-webkit-scrollbar {
