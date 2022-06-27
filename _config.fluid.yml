@@ -328,7 +328,7 @@ gitalk:
   perPage: 10 # Pagination size, with maximum 100.
   pagerDirection: last # Comment sorting direction, available values are last and first.
   distractionFreeMode: false # Facebook-like distraction free mode.
-  createIssueManually: true # By default, Gitalk will create a corresponding github issue for your every single page automatically when the logined user is belong to the admin users. You can create it manually by setting this option to true.
+  createIssueManually: false # By default, Gitalk will create a corresponding github issue for your every single page automatically when the logined user is belong to the admin users. You can create it manually by setting this option to true.
 
 # Valine
 # 完整文档 https://valine.js.org/configuration.html
