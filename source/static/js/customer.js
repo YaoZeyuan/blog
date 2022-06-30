@@ -9,7 +9,9 @@ function initFunc() {
 
   // 原始的html中没有目录id信息, 需要待页面加载完成后, 刷新一下toc目录
   setTimeout(() => {
-    tocbot.refresh();
+    if (window.tocbot && tocbot.refresh) {
+      tocbot.refresh();
+    }
   }, 1000);
 }
 initFunc();
