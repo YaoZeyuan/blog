@@ -762,10 +762,10 @@ hexo-server@^3.0.0:
     picocolors "^1.0.0"
     serve-static "^1.14.1"
 
-hexo-theme-fluid@^1.9.2:
-  version "1.9.2"
-  resolved "https://registry.npmmirror.com/hexo-theme-fluid/-/hexo-theme-fluid-1.9.2.tgz#1d4557d8e9f987c7c4737ccfc8b4e2555f3bf16d"
-  integrity sha512-utrmweqHYy0SA2dEd6bJuq0cJ1BiNA9xHl/NG9CmwLE2XYhaxktIsbodgBFx9M27I5jdiqlnOTr5Iav61Vi5Zg==
+hexo-theme-fluid@^1.9.3:
+  version "1.9.3"
+  resolved "https://registry.npmmirror.com/hexo-theme-fluid/-/hexo-theme-fluid-1.9.3.tgz#d2047c15878ce5312c69849abd1d70c3ef8deded"
+  integrity sha512-PJhEG1N+0HYK3XA+IbBrb2eHtqHAXJoM9Cy921H9m3gb3syKT0PxURUe4+BKD35ITeXTd8o65ExRintBBfu02Q==
 
 hexo-util@^2.0.0, hexo-util@^2.1.0, hexo-util@^2.6.1:
   version "2.6.1"
