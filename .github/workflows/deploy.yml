@@ -19,6 +19,7 @@ jobs:
       - run: npm run build
 
       - name: Deploy
+        # 使用说明见: https://github.com/peaceiris/actions-gh-pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           # 部署到YaoZeyuan.github.io上
