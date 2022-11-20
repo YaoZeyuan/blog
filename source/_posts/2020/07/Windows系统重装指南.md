@@ -85,3 +85,16 @@ tags:
                 4.  更换 npm 源 => `npm config set registry=https://registry.npm.taobao.org`
             2.  免除用户的 sudo 密码
         3.  最好使用 wsl
+        4.  建议例行导出 wsl 到 OneDrive 上备份, 重新安装系统后, 只需简单导入即可重建系统
+            1.  导出命令
+                1.  `wsl --export <Distro> <FileName>`
+                2.  示例: `wsl --export Ubuntu .\wsl_ubuntu_2022.tar`
+            2.  导入命令
+                1.  `wsl --import <Distro> <InstallLocation> <FileName>`
+                2.  示例: `wsl --import Ubuntu C:\ubuntu\ .\wsl_ubuntu_2022.tar`
+            3.  导入系统后需要配置 wsl 默认启动用户, 配置文件位于系统内的`/etc/wsl.conf`, 添加以下字段即可
+                1.  ```config
+                    [user]
+                    default=username
+                    ```
+                2.  方法来自 via [这里](https://superuser.com/questions/1566022/how-to-set-default-user-for-manually-installed-wsl-distro)
