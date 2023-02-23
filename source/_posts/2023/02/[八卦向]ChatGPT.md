@@ -112,13 +112,11 @@ InstructGPT 是 22 年 2 月提出来的, 目前看邱教授团队是世界第�
 
 ![将加速通用人工智能的实现](https://article.biliimg.com/bfs/article/60fea0071901377af773a63991b0223dae09a563.png)
 
-等待复刻版吧
+等待复刻版吧.
 
-最后, 感谢邱教授分享, 感谢 B 站和 up 主提供机会让我们看到这么专业的分享. 感谢互联网, 感谢现代科技的力量
+感谢邱教授分享, 感谢 B 站和 up 主提供机会让我们看到这么专业的分享. 感谢互联网, 感谢现代科技的力量
 
-PS:
+最后再安利一下自己写的总结文章:
 
-再安利一下自己的文章:
-
-- 简单科普戳这里[ChatGPT 快问快答](https://mp.weixin.qq.com/s/i-aDQBsOFzj2vv6UNO4Big)
-- 论文精读[ChatGPT 资料梳理](https://mp.weixin.qq.com/s/GilyrTia3aVygoXIiZPRYA)
+- 简单科普: [ChatGPT 快问快答](https://mp.weixin.qq.com/s/i-aDQBsOFzj2vv6UNO4Big)
+- 论文精读: [ChatGPT 资料梳理](https://mp.weixin.qq.com/s/GilyrTia3aVygoXIiZPRYA)
