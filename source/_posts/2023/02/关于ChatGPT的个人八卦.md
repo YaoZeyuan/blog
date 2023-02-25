@@ -90,7 +90,7 @@ InstructGPT 是 22 年 2 月提出来的, 目前看邱教授团队是世界第�
 
 ![最终考试结果](http://article.biliimg.com/bfs/article/43404b09d2e305cf692a80b701291f6850d4758f.png)
 
-# ChatGPT 的可能应用
+# 6. ChatGPT 的可能应用
 
 ![ChatGPT的进一步改进](http://article.biliimg.com/bfs/article/024d483a43c0847f2d06b8b48eeabdc9ecd67f84.png)
 
@@ -105,7 +105,7 @@ InstructGPT 是 22 年 2 月提出来的, 目前看邱教授团队是世界第�
 
 总之就是: 用人工智能训练人工智能, 正反馈飞轮转起来~
 
-# 最后的总结
+# 7. 最后的总结
 
 总结上其实没什么
 
