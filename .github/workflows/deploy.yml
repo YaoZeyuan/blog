@@ -2,8 +2,12 @@ name: github pages
 
 on:
   push:
-    branches:
-      - master # Set a branch name to trigger deployment
+    push:
+      branches:
+        - master
+      # Sequence of patterns matched against refs/tags
+      tags:
+        - "*" # Push events to matching any tags
   workflow_dispatch:
 
 jobs:
