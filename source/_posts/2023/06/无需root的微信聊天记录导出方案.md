@@ -185,4 +185,4 @@ cp sqlcipher /usr/local/sbin/
   - 编译sqlcipher以安装pysqlcipher3时必看
 - [加载共享库报错：cannot open shared object file: No such file or directory](https://blog.csdn.net/weixin_44401286/article/details/106699335)
 -   [软件包: sqlcipher (3.4.1-2build1) [universe]](https://packages.ubuntu.com/jammy/sqlcipher)
-    - sqlcipher(3.4.1)对应的sqlite3版本是3.37.2
+    - 目前ubuntu/debian官方提供的sqlcipher(3.4.1)对应sqlite3版本是3.37.2
