@@ -101,9 +101,32 @@ DETACH DATABASE db;
 .q
 ```
 
-## 将原始数据库转换为html聊天记录
+# 将原始数据库转换为html聊天记录
 
-坦诚说这一步我还没实验, 所以没啥好分享的. 但像[WechatExporter](https://github.com/BlueMatthew/WechatExporter)可以把无密码数据库内容转换为html聊天记录, 也可以通过[sqlite3浏览器](https://sqlitebrowser.org/dl/)直接查看聊天内容. 具体如何将数据库转成html文件这个我还没看, 回头有时间搞下, 看能否封装成方案
+[wechat-dump](https://github.com/ppwwyyxx/wechat-dump)本身提供了简单的将数据库转换为html的能力, 不过聊天样式还停留在古早时代, 输出的文件名也只是简单的按序号递增, 没有区分日期时间. 考虑到这是个人项目, 实现上有待完善的点可以理解. 记录一下转换命令
+
+## 准备阶段
+
+参考[wechat-dump](https://github.com/ppwwyyxx/wechat-dump)本身的项目说明, 需要以下几步.
+
+1.  执行`bash third-party/compile_silk.sh`, 构建silk执行文件, 似乎是一个将微信语音转换为mp3的程序, 执行就是了
+2.  下载`https://github.com/ppwwyyxx/wechat-dump/releases/download/0.1/emoji.cache.tar.bz2`文件, 将解压得到的`emoji.cache`放在项目根目录下, 方便读取
+3.  整理resource文件夹, 将`avatar/emoji/image2/sfs/video/voice2`文件夹都放在同一个文件夹下, 作为res目录
+    1.  这里边`emoji`位于`./微信(com.tencent.mm)/apps/com.tencent.mm/f/public`文件夹下
+    2.  其他所有文件夹(`avatar/image2/sfs/video/voice2`)都在`./微信(com.tencent.mm)/apps/com.tencent.mm/r/MicroMsg/${userid}`文件夹下----就是`EnMicroMsg.db`所在的文件夹
+4.  最好注释掉`wechat/emoji.py`里的日志输出, 报错过多会影响运行速度
+
+## 执行
+
+项目目录下执行`./dump-html.py 联系人的微信备注名 --db decrypted_enmicrossg.sqlite3  --res /mnt/e/微信\(com.tencent.mm\)/apps/com.tencent.mm/r/MicroMsg/xxxxxxxx --output ./resource/html/test.html`即可.
+
+如果忘记了联系人的备注名, 可以数据库的rcontact表中查询, 对应字段是`conRemark`, 具体数据库结构介绍可以自行百度, 或者看[这篇文章](https://github.com/lefex/LefexWork/blob/master/blog/iOS/%E5%AF%BC%E5%87%BA%E5%BE%AE%E4%BF%A1iOS%E6%95%B0%E6%8D%AE%E5%BA%93.md), 有简单的介绍
+
+更暴力的方法是通过[sqlite3浏览器](https://sqlitebrowser.org/dl/)直接查看message表里的聊天内容
+
+但总而言之, 目前还没看到很好的导出方案. 后续可以考虑自己搞一个
+
+# 特别注意
 
 特别注意: **绝对要保护好无加密的聊天数据库文件**, 这里边有所有的微信聊天记录内容, 而且完全没有加密, 所有人都能查看. 放出去就能当场社死...
 
@@ -111,7 +134,7 @@ DETACH DATABASE db;
 
 接下来是纯技术部分, 仅为记录方案发现过程. 非代码爱好者可以`Ctrl+W`了
 
-# 纯技术部分-与正文无关
+# 方案探索过程笔记-与正文无关
 
 事实上, 上述流程是一个非常取巧的过程, uin和imei一步都不能错. 错了之后排查问题也相当麻烦. 所以还是得知其所以然, 记录一下正确的探索流程.
 
