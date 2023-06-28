@@ -12,7 +12,7 @@ tags:
 
 webpack 的执行过程主要是这么几步:
 
-![webpack打包流程](https://tva1.sinaimg.cn/large/6ff418c7ly1fqcoph40ioj20kx0lf0uj.jpg)
+![webpack打包流程](https://mirror-4-web.bookflaneur.cn/https://tva1.sinaimg.cn/large/6ff418c7ly1fqcoph40ioj20kx0lf0uj.jpg)
 
 1.  确定配置参数, 把`webpack.base.conf.js`和`webpack.prod.conf.js`合并到一起, 作为参数启动 webpack()方法
 2.  根据配置里的`entry`, 找到所有的入口文件
@@ -31,7 +31,7 @@ webpack 的执行过程主要是这么几步:
 
 首先, `npm run build` 对应的是执行 package.json 里`scripts`项中配置的命令, 也就是`node build/build.js`
 
-![npm run build](https://tva1.sinaimg.cn/large/6ff418c7ly1fqcow6xy3fj20dw09lwew.jpg)
+![npm run build](https://mirror-4-web.bookflaneur.cn/https://tva1.sinaimg.cn/large/6ff418c7ly1fqcow6xy3fj20dw09lwew.jpg)
 
 命令实际执行的是`build/build.js`这个文件, 我们来看一下文件的内容
 

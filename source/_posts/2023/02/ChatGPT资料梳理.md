@@ -62,7 +62,7 @@ date: 2023-02-20 13:00:00
 - 只能处理文本内容, 无法处理其他任务(逻辑推理/语音识别/计算机视觉/...)
 - 例证
   - 语言模型 chatGPT, 认为他有思考能力只是一种美丽的误解
-  - [语言模型 chatGPT, 认为他有思考能力只是一种美丽的误解](http://tva1.sinaimg.cn/large/007Yq4pTly1hb152iis8wj31zm1ak7wh.jpg)
+  - [语言模型 chatGPT, 认为他有思考能力只是一种美丽的误解](https://mirror-4-web.bookflaneur.cn/https://tva1.sinaimg.cn/large/007Yq4pTly1hb152iis8wj31zm1ak7wh.jpg)
 
 # 原理解析/论文综述
 

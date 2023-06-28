@@ -56,7 +56,7 @@ tags: 神奇bug
 
 首先根据代码&日志整理 bug 出现的过程:
 
-![根据devtools日志, 复现bug流程](http://tva1.sinaimg.cn/large/007Yq4pTly1h0li2rdocnj31hc0qo1kx.jpg)
+![根据devtools日志, 复现bug流程](https://mirror-4-web.bookflaneur.cn/https://tva1.sinaimg.cn/large/007Yq4pTly1h0li2rdocnj31hc0qo1kx.jpg)
 
 根据 Network 记录, 可以推断代码运行流程为:
 
@@ -72,7 +72,7 @@ tags: 神奇bug
 
 1.  服务端收到的请求和实际发出的数量不一致. 从服务器日志中可以看到, 服务端并没有收到重新执行 js 后发出的请求.
 
-![服务器收到的请求数和实际发出的数量不一致](http://tva1.sinaimg.cn/large/007Yq4pTly1h0lia1gomqj30u50h8n1n.jpg)
+![服务器收到的请求数和实际发出的数量不一致](https://mirror-4-web.bookflaneur.cn/https://tva1.sinaimg.cn/large/007Yq4pTly1h0lia1gomqj30u50h8n1n.jpg)
 
 2.  神奇的是看 Network 监控确实也发出了请求, 只是响应值仍然是未登录状态下的响应值.
 
@@ -80,11 +80,11 @@ tags: 神奇bug
 
 **等等, 服务端明明没收到请求, Network 监控里接口的响应值是哪儿来的?**
 
-![disk-cache](http://tva1.sinaimg.cn/large/007Yq4pTly1h0pnoqmsl9j313b0eeqe4.jpg)
+![disk-cache](https://mirror-4-web.bookflaneur.cn/https://tva1.sinaimg.cn/large/007Yq4pTly1h0pnoqmsl9j313b0eeqe4.jpg)
 
 **这个 Disk-Cache 是怎么回事?**
 
-![disk-cache高清大图](http://tva1.sinaimg.cn/large/007Yq4pTly1h0pnpm403yj30s60em450.jpg)
+![disk-cache高清大图](https://mirror-4-web.bookflaneur.cn/https://tva1.sinaimg.cn/large/007Yq4pTly1h0pnpm403yj30s60em450.jpg)
 
 答案很显然, 在企微环境下, 浏览器缓存住了接口响应值, 更过分的是, 企微甚至缓存了网页响应值----当调用`history.back()`的时候, 企微甚至没去请求页面内容.
 

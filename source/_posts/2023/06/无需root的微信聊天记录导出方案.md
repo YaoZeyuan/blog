@@ -45,11 +45,11 @@ date: 2023-06-03 13:00:00
 
 首先从手机中导出微信数据库. MIUI版本14及以下提供了手机端备份App功能, 依次点击`设置`-`我的设备`-`备份与恢复`-`手机备份恢复`-`手机备份`(备份内容只选择微信)-`立即备份`
 
-![设置-我的设备](http://tva1.sinaimg.cn/large/007Yq4pTly1heli1688mgj30u01uoq7s.jpg)
-![备份与恢复](http://tva1.sinaimg.cn/large/007Yq4pTly1heli1nzfenj30u01uodkx.jpg)
-![手机备份](http://tva1.sinaimg.cn/large/007Yq4pTly1heli21re3cj30u01uo444.jpg)
-![备份产物路径](http://tva1.sinaimg.cn/large/007Yq4pTly1heliamh8lgj30u01uowk4.jpg)
-![备份产物路径-2](http://tva1.sinaimg.cn/large/007Yq4pTly1helic7d5hej310m08rgo7.jpg)
+![设置-我的设备](https://mirror-4-web.bookflaneur.cn/https://tva1.sinaimg.cn/large/007Yq4pTly1heli1688mgj30u01uoq7s.jpg)
+![备份与恢复](https://mirror-4-web.bookflaneur.cn/https://tva1.sinaimg.cn/large/007Yq4pTly1heli1nzfenj30u01uodkx.jpg)
+![手机备份](https://mirror-4-web.bookflaneur.cn/https://tva1.sinaimg.cn/large/007Yq4pTly1heli21re3cj30u01uo444.jpg)
+![备份产物路径](https://mirror-4-web.bookflaneur.cn/https://tva1.sinaimg.cn/large/007Yq4pTly1heliamh8lgj30u01uowk4.jpg)
+![备份产物路径-2](https://mirror-4-web.bookflaneur.cn/https://tva1.sinaimg.cn/large/007Yq4pTly1helic7d5hej310m08rgo7.jpg)
 
 备份完成后, 文件位于`MIUI/Backup/AllBackup`中, `微信(com.tencent.mm).bak`即为微信应用的所有内容, 复制到电脑上, 将后缀名从`.bak`修改为`.zip`, 解压即可.
 
@@ -57,8 +57,8 @@ date: 2023-06-03 13:00:00
 
 由于准备环节中我们通过重装微信的方式, 保证了当前手机上只有一个用户, 所以这里只会出现一个聊天数据库文件, 不需要和其他数据库进行分辨.
 
-![确认数据库文件位置](http://tva1.sinaimg.cn/large/007Yq4pTly1heliju5wupj31ap0ay45n.jpg)
-![微信聊天记录数据库](http://tva1.sinaimg.cn/large/007Yq4pTly1helifb8n7uj313k06nwhk.jpg)
+![确认数据库文件位置](https://mirror-4-web.bookflaneur.cn/https://tva1.sinaimg.cn/large/007Yq4pTly1heliju5wupj31ap0ay45n.jpg)
+![微信聊天记录数据库](https://mirror-4-web.bookflaneur.cn/https://tva1.sinaimg.cn/large/007Yq4pTly1helifb8n7uj313k06nwhk.jpg)
 
 接下来是数据库解密环节
 
@@ -71,7 +71,7 @@ date: 2023-06-03 13:00:00
 IMEI: 这个在8.0.37版本是固定值, 恒定为`1234567890ABCDEF`
 uin: 可以理解为是微信uid, 获取方法是登陆[文件传输助手-网页版](https://filehelper.weixin.qq.com/?from=windows&type=recommend), cookie里的wxuin字段即是
 
-![微信uin](http://tva1.sinaimg.cn/large/007Yq4pTly1helinunp8jj30fl0gndk1.jpg)
+![微信uin](https://mirror-4-web.bookflaneur.cn/https://tva1.sinaimg.cn/large/007Yq4pTly1helinunp8jj30fl0gndk1.jpg)
 
 uin也可以直接查看导出的`./微信(com.tencent.mm)/apps/com.tencent.mm/sp/auth_info_key_prefs.xml`文件, 里边有`_auth_uin`字段
 

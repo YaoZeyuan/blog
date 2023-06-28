@@ -85,7 +85,7 @@ sqlite3 同理.
 
 1.  本地 node 版本必须和 Electron 内置的 node 版本保持一致, 否则本地 node6, 构建出来的`.node`文件也是为 node6 准备的, 结果 Electron 中内嵌的 Node 版本是 16(Electron-Node 对应关系可以在[发布记录](https://www.electronjs.org/releases/stable)中找到), NAPI 接口都不一样, 项目能运行起来才怪.
 2.  对 windows 项目, 直接安装 Visual Studio . 微软官方也提供了中文版的[安装说明](https://docs.microsoft.com/zh-cn/visualstudio/install/install-visual-studio?view=vs-2022), 下一个 Visual Studio Installer, 安装社区版(免费)即可. 安装完成勾上 Node.js 开发, 会自动下载需要的依赖
-    - ![VS依赖列表](http://tva1.sinaimg.cn/large/007Yq4pTly1h5945ux8duj31hc0u0tk2.jpg)
+    - ![VS依赖列表](https://mirror-4-web.bookflaneur.cn/https://tva1.sinaimg.cn/large/007Yq4pTly1h5945ux8duj31hc0u0tk2.jpg)
 3.  如果二次构建时提示找不到 VS 对应版本或 electron 的头文件下载的特别慢, 则创建一个 `.yarnrc`为 yarn 指路即可
     示例文件:
     ```shell
