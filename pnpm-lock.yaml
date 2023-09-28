@@ -9,7 +9,7 @@ dependencies:
     specifier: ^1.6.2
     version: 1.8.0(react-dom@15.7.0)(react@15.7.0)
   hexo:
-    specifier: ^6.2.0
+    specifier: ^6.3.0
     version: 6.3.0
   hexo-deployer-git:
     specifier: ^3.0.0

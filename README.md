@@ -3,8 +3,8 @@
 项目启动
 
 ```bash
-npm i -g hexo
-npm i && cd ./themes/next && npm i && cd ../..
+pnpm i -g hexo
+pnpm install && cd ./themes/next && pnpm install && cd ../..
 hexo server
 ```
 
