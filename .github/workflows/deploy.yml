@@ -28,6 +28,8 @@ jobs:
           cache: "pnpm"
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
+      - name: build blog page
+        run: pnpm build
       - name: Deploy
         # 使用说明见: https://github.com/peaceiris/actions-gh-pages
         uses: peaceiris/actions-gh-pages@v3
