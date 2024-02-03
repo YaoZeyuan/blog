@@ -106,9 +106,12 @@ web_analytics: # 网页访问统计
     app_key:
     server_url: # REST API 服务器地址，国际版不填
 
-lazyload: # 对页面中的图片进行懒加载处理，可见范围外的图片不会加载
-  enable: false
+# 对页面中的图片进行懒加载处理，可见范围外的图片不会加载
+lazyload: 
+  enable: true
+  loading_img: /img/loading.gif
   onlypost: false # 仅在文章页使用懒加载，开启后如果自定义页面需要使用，可以在 Front-matter 里指定 `lazyload: true`
+  # offset_factor: 2
 
 daovoice: # 在线客服 Daovoice 参考：https://dashboard.daovoice.io
   enable: false # 是否开启在线客服聊天
