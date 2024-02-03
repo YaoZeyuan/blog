@@ -215,7 +215,8 @@ index:
     text: "东风夜放花千树,山长水阔知何处" # 为空则按 hexo config.subtitle 显示
   auto_excerpt:
     enable: true
-  post_url_target: _self # available: _blank | _self
+  # 文章跳转方式 => 新页面打开
+  post_url_target: _blank # available: _blank | _self
   post_meta: # 是否显示文章信息（时间、分类、标签）
     date: true
     category: true
