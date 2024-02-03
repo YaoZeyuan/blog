@@ -13,6 +13,7 @@ hexo server
 已添加 github action, push 到 master 后自动部署
 
 博客地址 => [https://www.yaozeyuan.online](https://www.yaozeyuan.online)
+源站地址 => [https://github-blog.yaozeyuan.online/](https://github-blog.yaozeyuan.online/)
 
 commit 信息规范 =>
 
