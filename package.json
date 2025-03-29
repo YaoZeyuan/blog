@@ -6,6 +6,7 @@
     "build": "hexo generate",
     "clean": "hexo clean",
     "preview": "hexo server",
+    "dev": "npm run start",
     "deploy": "npm run build && hexo deploy",
     "start": "npm run preview"
   },
