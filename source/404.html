@@ -1,29 +1,211 @@
+---
+title: 404
+date: 2020-09-24 00:32:51
+---
+
+
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>页面未找到 - 404错误</title>
-    <script src="https://cdn.jsdelivr.net/npm/less" ></script>
-    <link rel="stylesheet/less" type="text/css" href="./404.less" />
+    <style>
+      .page-404-container{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+      }
+        .page-404-container * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+}
+.page-404-container body {
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  color: #333;
+  line-height: 1.6;
+}
+.page-404-container .container {
+  max-width: 800px;
+  width: 100%;
+  text-align: center;
+  padding: 40px;
+  background: rgba(255, 255, 255, 0.85);
+  border-radius: 20px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  animation: fadeIn 0.8s ease-out;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.page-404-container .error-code {
+  font-size: 120px;
+  font-weight: 700;
+  color: #4a6ee0;
+  margin-bottom: 10px;
+  text-shadow: 3px 3px 0 rgba(74, 110, 224, 0.1);
+  line-height: 1;
+}
+.page-404-container .error-title {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #2d3748;
+}
+.page-404-container .error-message {
+  font-size: 18px;
+  margin-bottom: 40px;
+  color: #4a5568;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.page-404-container .projects-section {
+  margin-top: 40px;
+  text-align: left;
+}
+.page-404-container .section-title {
+  font-size: 22px;
+  margin-bottom: 25px;
+  color: #2d3748;
+  text-align: center;
+  position: relative;
+  padding-bottom: 10px;
+}
+.page-404-container .section-title:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 3px;
+  background: linear-gradient(to right, #4a6ee0, #6b8cff);
+  border-radius: 3px;
+}
+.page-404-container .project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 25px;
+  margin-top: 20px;
+}
+.page-404-container .project-card {
+  background: white;
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  border: 1px solid rgba(74, 110, 224, 0.1);
+  position: relative;
+  overflow: hidden;
+}
+.page-404-container .project-card:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 5px;
+  height: 100%;
+  background: linear-gradient(to bottom, #4a6ee0, #6b8cff);
+}
+.page-404-container .project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+.page-404-container .project-title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #2d3748;
+}
+.page-404-container .project-link {
+  color: #4a6ee0;
+  text-decoration: none;
+  font-weight: 500;
+  display: inline-block;
+  margin-top: 15px;
+  transition: all 0.2s;
+}
+.page-404-container .project-link:hover {
+  color: #6b8cff;
+  text-decoration: underline;
+}
+.page-404-container .project-description {
+  font-size: 15px;
+  color: #4a5568;
+  line-height: 1.5;
+}
+.page-404-container .home-button {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 12px 30px;
+  background: linear-gradient(to right, #4a6ee0, #6b8cff);
+  color: white;
+  text-decoration: none;
+  border-radius: 50px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(74, 110, 224, 0.3);
+}
+.page-404-container .home-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(74, 110, 224, 0.4);
+}
+.page-404-container .animation-container {
+  margin: 30px 0;
+}
+.page-404-container .floating {
+  animation: floating 3s ease-in-out infinite;
+}
+@keyframes floating {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+@media (max-width: 768px) {
+  .page-404-container .container {
+    padding: 25px 20px;
+  }
+  .page-404-container .error-code {
+    font-size: 80px;
+  }
+  .page-404-container .error-title {
+    font-size: 24px;
+  }
+  .page-404-container .project-grid {
+    grid-template-columns: 1fr;
+  }
+}
+    </style>
 </head>
 <body>
     <div class="page-404-container">
         <div class="container">
-            <div class="animation-container">
-                <svg class="floating" width="120" height="120" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="#4a6ee0" stroke-width="2"/>
-                    <path d="M12 16V12" stroke="#4a6ee0" stroke-width="2" stroke-linecap="round"/>
-                    <path d="M12 8H12.01" stroke="#4a6ee0" stroke-width="2" stroke-linecap="round"/>
-                </svg>
-            </div>
-            
-            <h1 class="error-code">404</h1>
-            <h2 class="error-title">页面内容未找到，请检查</h2>
             <p class="error-message">抱歉，您要查找的页面不存在或已被移动。请检查URL是否正确，或返回主页。</p>
             
             <div class="projects-section">
-                <h3 class="section-title">您可以看下我的其他作品</h3>
+                <h3 class="section-title">或许可以看下我的其他作品</h3>
                 
                 <div class="project-grid">
                     <div class="project-card">
@@ -34,19 +216,19 @@
                     
                     <div class="project-card">
                         <h4 class="project-title">稳部落</h4>
-                        <p class="project-description">备份导出用户微博为pdf，保留您的社交媒体记忆。</p>
+                        <p class="project-description">备份导出用户微博为pdf，保留您在微博上的故事。</p>
                         <a href="https://stablog.yaozeyuan.online/" class="project-link" target="_blank">访问项目 →</a>
                     </div>
                     
                     <div class="project-card">
                         <h4 class="project-title">诗云-起个好名字</h4>
-                        <p class="project-description">基于大数据的起名辅助工具，包含15w现代人名，23w私募基金+公司名，1w古代人名+字号。</p>
+                        <p class="project-description">一般而言私募基金的名字往往独特且有含义，用小工具随机生成名字，可以试试。</p>
                         <a href="https://name-generator.yaozeyuan.online/" class="project-link" target="_blank">访问项目 →</a>
                     </div>
                     
                     <div class="project-card">
                         <h4 class="project-title">扑克牌新手如何在斗地主全国锦标赛中夺冠</h4>
-                        <p class="project-description">分享我对投资理财的一些理解和思考，通过扑克牌策略类比投资策略。</p>
+                        <p class="project-description">通过扑克牌策略类比投资策略，分享我对投资理财的一些理解与思考。</p>
                         <a href="https://ppt-share-how-to-win-poke-in-a-stock.yaozeyuan.online/" class="project-link" target="_blank">访问项目 →</a>
                     </div>
                 </div>
