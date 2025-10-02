@@ -5,17 +5,17 @@
   "scripts": {
     "build": "hexo generate",
     "clean": "hexo clean",
-    "preview": "hexo server",
+    "preview": "hexo server -p 4001",
     "dev": "npm run start",
     "deploy": "npm run build && hexo deploy",
     "start": "npm run preview"
   },
   "hexo": {
-    "version": "6.3.0"
+    "version": "8.0.0"
   },
   "dependencies": {
     "gitalk": "^1.6.2",
-    "hexo": "^6.3.0",
+    "hexo": "^8.0.0",
     "hexo-deployer-git": "^3.0.0",
     "hexo-generator-archive": "^1.0.0",
     "hexo-generator-category": "^1.0.0",
