@@ -51,7 +51,7 @@ date: 2023-06-03 13:00:00
 ![备份产物路径](https://mirror-4-web.bookflaneur.cn/https://tva1.sinaimg.cn/large/007Yq4pTly1heliamh8lgj30u01uowk4.jpg)
 ![备份产物路径-2](https://mirror-4-web.bookflaneur.cn/https://tva1.sinaimg.cn/large/007Yq4pTly1helic7d5hej310m08rgo7.jpg)
 
-备份完成后, 文件位于`MIUI/Backup/AllBackup`中, `微信(com.tencent.mm).bak`即为微信应用的所有内容, 复制到电脑上, 将后缀名从`.bak`修改为`.zip`, 解压即可.
+备份完成后, 文件位于`MIUI/Backup/AllBackup`中, `微信(com.tencent.mm).bak`即为微信应用的所有内容, 复制到电脑上, 将后缀名从`.bak`修改为`.7z`, 使用[7-zip](https://www.7-zip.org/download.html)软件解压即可.
 
 解压后微信聊天记录数据库名为`EnMicroMsg.db`, 位于`微信(com.tencent.mm)/apps/com.tencent.mm/r/MicroMsg/xxxxxx`文件夹内. 这个位置不太好找, 可以直接在操作系统下搜索文件名.
 
