@@ -8,4 +8,5 @@ layout: about
 
 知乎助手, 稳部落
 
-[好名有据](https://name-generator.yaozeyuan.online/)，[睡前消息](https://not-official-bedtime-news-group.yaozeyuan.online/)
+<a href='https://name-generator.yaozeyuan.online' target="_blank">好名有据</a>，
+<a href='https://not-official-bedtime-news-group.yaozeyuan.online' target="_blank">睡前消息讨论组</a>，
