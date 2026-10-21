@@ -4,7 +4,7 @@ tags: mba求学记
 date: 2026-10-18 13:00:00
 ---
 
-> [小组作业一](./mba小组作业一要求.md) · 演讲逐字稿 · 2026-10-18 更新
+> [小组作业一](https://mp.weixin.qq.com/s/7ZBgg6_tuLY23Xeo-szH-A) · 演讲逐字稿 · 2026-10-18 更新
 >
 > 点击[阅读原文](https://mba.yaozeyuan.online/slides/information-systems/ai-competition)查看PPT
 
