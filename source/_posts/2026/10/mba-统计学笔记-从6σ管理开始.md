@@ -1,5 +1,5 @@
 ---
-title: mba统计学笔记
+title: mba统计学笔记(1):从6σ管理开始
 tags: mba求学记
 date: 2026-10-25 13:00:00
 ---
@@ -41,7 +41,7 @@ $$CV = \frac{s}{\bar{x}} \times 100\%$$
 
 ## 为什么控制误差要用标准差作为衡量单位
 
-![正态分布曲线](https://tvax1.sinaimg.cn/large/006GAeg6ly1iiev84klupj31kw11y7bo.jpg)
+![正态分布曲线](https://mirror-4-web.bookflaneur.cn/https://tvax1.sinaimg.cn/large/006GAeg6ly1iiev84klupj31kw11y7bo.jpg)
 
 在正态分布中，可以看到数据距离平均值(μ)越远，出现概率越低。因此可以用x个标准差作为误差的衡量单位。一般来说
 
