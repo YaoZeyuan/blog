@@ -1,5 +1,5 @@
 ---
-title: mba统计学笔记(2): p值与t检验
+title: mba统计学笔记(2):p值与t检验
 tags: mba求学记
 date: 2026-10-25 13:00:00
 ---
