@@ -1,3 +1,20 @@
+/* 排版参数：对齐 tw93.fun 的正文阅读节奏 */
+body,
+.markdown-body {
+  font-size: 15px;
+  line-height: 1.64;
+}
+
+html,
+body {
+  letter-spacing: 0.02em;
+}
+
+body {
+  /* 与 tw93.fun 一致，保留次像素平滑而不是灰度抗锯齿 */
+  -webkit-font-smoothing: subpixel-antialiased;
+}
+
 .image-caption {
   /* 图片文字居中 */
   /* text-align: center; */
