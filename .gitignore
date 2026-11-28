@@ -6,6 +6,7 @@ node_modules/
 public/
 .deploy*/
 .idea
+.workbuddy
 
 
 #   next 主题的ignore
